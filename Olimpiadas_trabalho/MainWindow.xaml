@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="304.787" Width="357.978">
     <Grid>
-        
+        <Button Content="Administrativo" HorizontalAlignment="Left" Margin="61,69,0,0" VerticalAlignment="Top" Width="222" Height="40" Click="Button_Click_2"/>
+        <Button Content="Competidores" HorizontalAlignment="Left" Margin="61,143,0,0" VerticalAlignment="Top" Width="222" Height="41" Click="Button_Click_1"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="125,218,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click" Height="26"/>
+        <Label Content="Olimpíadas 2020" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top" FontWeight="ExtraBold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="101,10,0,0" VerticalAlignment="Top" Width="143"/>
+
     </Grid>
 </Window>

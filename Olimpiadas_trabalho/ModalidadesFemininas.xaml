@@ -1,0 +1,23 @@
+﻿<Window x:Class="Olimpiadas_trabalho.ModalidadesFemininas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Olimpiadas_trabalho"
+        mc:Ignorable="d"
+        Title="ModalidadesFemininas" Height="402.128" Width="338.83">
+    <Grid>
+        <Label Content="Modalidades" HorizontalAlignment="Left" Margin="137,11,0,0" VerticalAlignment="Top" Height="24"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="24" Margin="121,10,0,0" VerticalAlignment="Top" Width="115"/>
+        <CheckBox x:Name="pistoladear" Content="Pistola de ar 10m" HorizontalAlignment="Left" Margin="68,90,0,0" VerticalAlignment="Top" Height="18" Width="148"/>
+        <CheckBox x:Name="carabinadear" Content="Carabina de ar 10m" HorizontalAlignment="Left" Margin="68,129,0,0" VerticalAlignment="Top" Height="18" Width="163"/>
+        <CheckBox x:Name="pistola" Content="Pistola 25m" HorizontalAlignment="Left" Margin="68,169,0,0" VerticalAlignment="Top" Height="17" Width="107"/>
+        <CheckBox x:Name="carabinatrespos" Content="Carabina três posições 50m" HorizontalAlignment="Left" Margin="68,209,0,0" VerticalAlignment="Top" Height="18" Width="218"/>
+        <CheckBox x:Name="skeet" Content="Skeet" HorizontalAlignment="Left" Margin="68,248,0,0" VerticalAlignment="Top" Height="18" Width="65"/>
+        <CheckBox x:Name="fossa" Content="Fossa olímpica" HorizontalAlignment="Left" Margin="68,286,0,0" VerticalAlignment="Top" Height="18" Width="128"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,51,0,0" TextWrapping="Wrap" Text="*Selecione apenas as modalidades que deseja participar" VerticalAlignment="Top" Height="15"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="26,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="Button_Click"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="211,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

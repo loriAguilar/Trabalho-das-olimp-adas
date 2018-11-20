@@ -1,0 +1,18 @@
+﻿<Window x:Class="Olimpiadas_trabalho.Nomesparamodalidades"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Olimpiadas_trabalho"
+        mc:Ignorable="d"
+        Title="Nomesparamodalidades" Height="269.681" Width="383.511">
+    <Grid>
+        <ComboBox x:Name="combonomes" HorizontalAlignment="Left" Margin="133,67,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
+        <Button Content="Selecionar" HorizontalAlignment="Left" Margin="101,119,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="218,119,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Label Content="Nomes" HorizontalAlignment="Left" Margin="170,22,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="157,22,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,172,0,0" TextWrapping="Wrap" Text="*Selecione o nome que deseja cadastrar nas modalidades e pressione 'selecionar' " VerticalAlignment="Top" Width="241"/>
+
+    </Grid>
+</Window>

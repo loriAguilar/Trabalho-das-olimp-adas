@@ -55,6 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Area_administrativa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Competidores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dados_dos_atletas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fase_classificatoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,12 +79,49 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Area_administrativa.xaml.cs">
+      <DependentUpon>Area_administrativa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Atleta.cs" />
+    <Compile Include="Competicao_feminina.cs" />
+    <Compile Include="Competicao_masculina.cs" />
+    <Compile Include="Competidores.xaml.cs">
+      <DependentUpon>Competidores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controle.cs" />
+    <Compile Include="Dados_dos_atletas.xaml.cs">
+      <DependentUpon>Dados_dos_atletas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fase_classificatoria.xaml.cs">
+      <DependentUpon>Fase_classificatoria.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ModalidadesFemininas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModalidadesMasculinas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Nomesparamodalidades.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModalidadesFemininas.xaml.cs">
+      <DependentUpon>ModalidadesFemininas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModalidadesMasculinas.xaml.cs">
+      <DependentUpon>ModalidadesMasculinas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Nomesparamodalidades.xaml.cs">
+      <DependentUpon>Nomesparamodalidades.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

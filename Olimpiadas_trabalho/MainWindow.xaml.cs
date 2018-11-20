@@ -24,5 +24,26 @@ namespace Olimpiadas_trabalho
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //janela que será usada para cadastrar os dados dos atletas e  quais competições eles vão participar
+            Competidores competidores = new Competidores();
+            competidores.ShowDialog();
+        }
+
+        //administrativo
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            //esse botão vai desencadear a abertura de uma janela para que os organizadores do evento entrem (não sei se por meio de senha, seria o ideal)
+            //e cadastrem a pontuação dos atletas que participaram da competição
+            Area_administrativa adm = new Area_administrativa();
+            adm.ShowDialog();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

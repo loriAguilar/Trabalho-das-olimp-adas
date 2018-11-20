@@ -1,0 +1,26 @@
+﻿<Window x:Class="Olimpiadas_trabalho.ModalidadesMasculinas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Olimpiadas_trabalho"
+        mc:Ignorable="d"
+        Title="ModalidadesMasculinas" Height="486.702" Width="346.809">
+    <Grid>
+        <Label Content="Modalidades" HorizontalAlignment="Left" Margin="137,11,0,0" VerticalAlignment="Top" Height="24"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="24" Margin="121,10,0,0" VerticalAlignment="Top" Width="115"/>
+        <CheckBox Content="Pistola de ar 10m" HorizontalAlignment="Left" Margin="70,82,0,0" VerticalAlignment="Top" Height="18" Width="148"/>
+        <CheckBox Content="Carabina de ar 10m" HorizontalAlignment="Left" Margin="70,121,0,0" VerticalAlignment="Top" Height="18" Width="163"/>
+        <CheckBox Content="Pistola rápida 25m" HorizontalAlignment="Left" Margin="70,161,0,0" VerticalAlignment="Top" Height="17" Width="107"/>
+        <CheckBox Content="Carabina três posições 50m" HorizontalAlignment="Left" Margin="70,264,0,0" VerticalAlignment="Top" Height="18" Width="218" RenderTransformOrigin="0.504,1.623"/>
+        <CheckBox Content="Skeet" HorizontalAlignment="Left" Margin="70,300,0,0" VerticalAlignment="Top" Height="18" Width="65"/>
+        <CheckBox Content="Fossa olímpica" HorizontalAlignment="Left" Margin="70,336,0,0" VerticalAlignment="Top" Height="18" Width="128"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,43,0,0" TextWrapping="Wrap" Text="*Selecione apenas as modalidades que deseja participar" VerticalAlignment="Top" Height="15"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="28,412,0,0" VerticalAlignment="Top" Width="80" Height="21" Click="Button_Click"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="213,412,0,0" VerticalAlignment="Top" Width="75" Height="21" Click="Button_Click_1"/>
+        <CheckBox Content="Pistola 50m" HorizontalAlignment="Left" Margin="70,197,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Carabina deitado 50m" HorizontalAlignment="Left" Margin="70,230,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Fossa olímpica dupla" HorizontalAlignment="Left" Margin="70,372,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

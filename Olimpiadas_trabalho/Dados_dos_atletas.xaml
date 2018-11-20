@@ -1,0 +1,23 @@
+﻿<Window x:Class="Olimpiadas_trabalho.Dados_dos_atletas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Olimpiadas_trabalho"
+        mc:Ignorable="d"
+        Title="Dados_dos_atletas" Height="285.638" Width="303.723">
+    <Grid>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="40,79,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textnome" HorizontalAlignment="Left" Height="23" Margin="103,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="textnome_TextChanged"/>
+
+        <Label Content="País:" HorizontalAlignment="Left" Margin="40,117,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="texboxpais" HorizontalAlignment="Left" Height="23" Margin="103,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="texboxpais_TextChanged"/>
+        <Label Content="Comitê:" HorizontalAlignment="Left" Margin="34,151,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="texboxcomite" HorizontalAlignment="Left" Height="23" Margin="103,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="texboxcomite_TextChanged"/>
+        <Label Content="Cadastro de dados dos atletas" HorizontalAlignment="Left" Margin="70,30,0,0" VerticalAlignment="Top" FontWeight="ExtraBold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="62,30,0,0" VerticalAlignment="Top" Width="204"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="56,202,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="180,202,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
