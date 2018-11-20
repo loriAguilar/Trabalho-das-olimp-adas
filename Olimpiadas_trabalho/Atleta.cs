@@ -13,8 +13,8 @@ namespace Olimpiadas_trabalho
         protected string pais;
         protected string comite;
         protected char sexo;
-        // private Competicao_feminina competidora; //relção de composição com atleta, sem atleta, não tem competidores
-        //private Competicao_masculina competidor;
+        private Competicao_feminina competidora; //relção de composição com atleta, sem atleta, não tem competidores
+        private Competicao_masculina competidor;
 
         //construtores classe atleta
         public Atleta()
@@ -61,17 +61,17 @@ namespace Olimpiadas_trabalho
             set { comite = value; }
         }
 
-        /* public Competicao_feminina Competidora
+         public Competicao_feminina Competidora
          {
              get { return competidora; }
              set { competidora = value; }
          }
-
+        
          public Competicao_masculina Competidor
          {
              get { return competidor; }
              set { competidor = value; }
-         }*/
+         }
     }
 }
 

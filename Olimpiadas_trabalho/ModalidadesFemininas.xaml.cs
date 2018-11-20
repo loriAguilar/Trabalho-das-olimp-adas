@@ -27,7 +27,7 @@ namespace Olimpiadas_trabalho
         //evento cadastrar
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         //evento sair

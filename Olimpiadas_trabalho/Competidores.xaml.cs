@@ -34,11 +34,11 @@ namespace Olimpiadas_trabalho
             nome = dados.textnome.Text;
             pais = dados.texboxpais.Text;
             comite = dados.texboxcomite.Text;
-            Competicao_feminina x;
-            x = new Competicao_feminina(nome, pais, comite, sexo);
+            Atleta x;
+            x = new Atleta(nome, pais, comite, sexo);
             Controle.competidores.Add(x);
             Controle.contador++;
-
+            this.Close();
         }
 
         //inscrever atleta para competição masculina //só os dados do atleta
@@ -55,6 +55,7 @@ namespace Olimpiadas_trabalho
             x = new Atleta(nome, pais, comite, sexo);
             Controle.competidores.Add(x);
             Controle.contador++;
+            this.Close();
         }
 
         //botão responsável por desencadear o evento "sair"
@@ -66,6 +67,8 @@ namespace Olimpiadas_trabalho
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            this.Close();
+
             Nomesparamodalidades nomes = new Nomesparamodalidades();
             nomes.ShowDialog();
         }
