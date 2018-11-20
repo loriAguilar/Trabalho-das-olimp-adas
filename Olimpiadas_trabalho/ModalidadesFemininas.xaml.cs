@@ -22,6 +22,10 @@ namespace Olimpiadas_trabalho
         public ModalidadesFemininas()
         {
             InitializeComponent();
+            for(int d=0;d<Controle.contador;d++)
+            {
+                Controle.competidores[d] = new Competicao_feminina();
+            }
         }
 
         //evento cadastrar
@@ -34,34 +38,37 @@ namespace Olimpiadas_trabalho
                 string nome = Controle.auxf;
                 for (int c = 0; c < Controle.contador; c++)
                 {
-                    if (pistoladear.IsChecked == true)
+                    if (Controle.competidores[c].Nome == nome)
                     {
-                        Controle.competidores[c].Competidora.Competicao_disputada[0] = "pistoladear";
-                    }
+                        if (pistoladear.IsChecked == true)
+                        {
+                            Controle.competidores[c].Competidora.Competicao_disputada[0] = "pistoladear";
+                        }
 
-                    if(carabinadear.IsChecked==true)
-                    {
-                        Controle.competidores[c].Competidora.Competicao_disputada[1] = "carabinadear";
-                    }
+                        if (carabinadear.IsChecked == true)
+                        {
+                            Controle.competidores[c].Competidora.Competicao_disputada[1] = "carabinadear";
+                        }
 
-                    if(pistola.IsChecked==true)
-                    {
-                        Controle.competidores[c].Competidora.Competicao_disputada[2] = "pistola";
-                    }
+                        if (pistola.IsChecked == true)
+                        {
+                            Controle.competidores[c].Competidora.Competicao_disputada[2] = "pistola";
+                        }
 
-                    if(carabinatrespos.IsChecked==true)
-                    {
-                        Controle.competidores[c].Competidora.Competicao_disputada[3] = "carabinatrespos";
-                    }
+                        if (carabinatrespos.IsChecked == true)
+                        {
+                            Controle.competidores[c].Competidora.Competicao_disputada[3] = "carabinatrespos";
+                        }
 
-                    if(skeet.IsChecked==true)
-                    {
-                        Controle.competidores[c].Competidora.Competicao_disputada[4] = "skeet";
-                    }
+                        if (skeet.IsChecked == true)
+                        {
+                            Controle.competidores[c].Competidora.Competicao_disputada[4] = "skeet";
+                        }
 
-                    if(fossa.IsChecked==true)
-                    {
-                        Controle.competidores[c].Competidora.Competicao_disputada[5] = "fossa";
+                        if (fossa.IsChecked == true)
+                        {
+                            Controle.competidores[c].Competidora.Competicao_disputada[5] = "fossa";
+                        }
                     }
                 }
             }
@@ -69,7 +76,7 @@ namespace Olimpiadas_trabalho
             {
                 MessageBox.Show("Erro: " + k.Message);
             }
-            finally { MessageBox.Show("tudo certo"); }
+            
         }
 
         //evento sair

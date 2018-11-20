@@ -44,7 +44,7 @@ namespace Olimpiadas_trabalho
             ModalidadesFemininas modalidadesFemininas = new ModalidadesFemininas();
             ModalidadesMasculinas modalidadesMasculinas = new ModalidadesMasculinas();
             string selecionado = Convert.ToString(combonomes.SelectionBoxItem);
-            Controle.auxf = selecionado;
+           
             try
             {
 
@@ -54,6 +54,7 @@ namespace Olimpiadas_trabalho
                     {
                         if (Controle.competidores[b].Sexo == 'F')
                         {
+                            Controle.auxf = selecionado;
                             modalidadesFemininas.ShowDialog();
                         }
                         else { modalidadesMasculinas.ShowDialog(); }
@@ -67,7 +68,7 @@ namespace Olimpiadas_trabalho
             {
                 MessageBox.Show(x.Message);
             }
-            finally { this.Close(); }
+            
 
         }
 
