@@ -27,7 +27,49 @@ namespace Olimpiadas_trabalho
         //evento cadastrar
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            Competicao_feminina comp = new Competicao_feminina();
+
+            try
+            {
+                string nome = Controle.auxf;
+                for (int c = 0; c < Controle.contador; c++)
+                {
+                    if (pistoladear.IsChecked == true)
+                    {
+                        Controle.competidores[c].Competidora.Competicao_disputada[0] = "pistoladear";
+                    }
+
+                    if(carabinadear.IsChecked==true)
+                    {
+                        Controle.competidores[c].Competidora.Competicao_disputada[1] = "carabinadear";
+                    }
+
+                    if(pistola.IsChecked==true)
+                    {
+                        Controle.competidores[c].Competidora.Competicao_disputada[2] = "pistola";
+                    }
+
+                    if(carabinatrespos.IsChecked==true)
+                    {
+                        Controle.competidores[c].Competidora.Competicao_disputada[3] = "carabinatrespos";
+                    }
+
+                    if(skeet.IsChecked==true)
+                    {
+                        Controle.competidores[c].Competidora.Competicao_disputada[4] = "skeet";
+                    }
+
+                    if(fossa.IsChecked==true)
+                    {
+                        Controle.competidores[c].Competidora.Competicao_disputada[5] = "fossa";
+                    }
+                }
+            }
+            catch(Exception k)
+            {
+                MessageBox.Show("Erro: " + k.Message);
+            }
+            finally { MessageBox.Show("tudo certo"); }
         }
 
         //evento sair

@@ -44,7 +44,7 @@ namespace Olimpiadas_trabalho
             ModalidadesFemininas modalidadesFemininas = new ModalidadesFemininas();
             ModalidadesMasculinas modalidadesMasculinas = new ModalidadesMasculinas();
             string selecionado = Convert.ToString(combonomes.SelectionBoxItem);
-
+            Controle.auxf = selecionado;
             try
             {
 

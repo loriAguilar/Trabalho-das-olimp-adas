@@ -23,11 +23,13 @@ namespace Olimpiadas_trabalho
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             //janela que será usada para cadastrar os dados dos atletas e  quais competições eles vão participar
+            //MessageBox.Show("Teste");
             Competidores competidores = new Competidores();
             competidores.ShowDialog();
         }
