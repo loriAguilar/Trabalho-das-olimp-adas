@@ -15,8 +15,8 @@ namespace Olimpiadas_trabalho
 
 
         public static string nomedamodalidade;
-        public const int tam = 10;
-        public static int contador = 0;
+        //public const int tam = 10;
+        //public static int contador = 0;
         public static string nome = null;
     }
     
