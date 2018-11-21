@@ -55,7 +55,7 @@ namespace Olimpiadas_trabalho
                             Controle.indiceCompetidores = b;
                             modalidadesFemininas.ShowDialog();
                         }
-                        else { modalidadesMasculinas.ShowDialog(); }
+                        else {Controle.indiceCompetidores=b; modalidadesMasculinas.ShowDialog(); }
                     }
 
                 }

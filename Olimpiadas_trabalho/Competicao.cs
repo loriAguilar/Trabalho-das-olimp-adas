@@ -9,7 +9,7 @@ namespace Olimpiadas_trabalho
     class Competicao
     {
         public string nomeCompeticao;
-        private double[] notas = new double[3];
+        private double[] notas = new double[2];
 
         #region Getters e Setters
         public string NomeCompeticao

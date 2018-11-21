@@ -23,9 +23,11 @@ namespace Olimpiadas_trabalho
         public MainWindow()
         {
             InitializeComponent();
+            MessageBox.Show("\nTRABALHO FINAL INTEGRADO \nNomes: \nGustavo Ribeiro de Freitas Sena \nJoão Vitor Mendes Soares \nLorena Alves Aguilar \nNathan Ribeiro Ferreira Pinto ", "", MessageBoxButton.OK,MessageBoxImage.Information);
             
         }
 
+        #region competidores
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             //teste teste
@@ -34,8 +36,9 @@ namespace Olimpiadas_trabalho
             Competidores competidores = new Competidores();
             competidores.ShowDialog();
         }
+        #endregion
 
-        //administrativo
+        #region administrativo
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             //esse botão vai desencadear a abertura de uma janela para que os organizadores do evento entrem (não sei se por meio de senha, seria o ideal)
@@ -43,10 +46,14 @@ namespace Olimpiadas_trabalho
             Area_administrativa adm = new Area_administrativa();
             adm.ShowDialog();
         }
+        #endregion
 
+        #region sair
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
+        #endregion
     }
 }

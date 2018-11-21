@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="faseclassificatoriaf" Height="400.532" Width="334.043">
+        Title="faseclassificatoriaf" Height="400.532" Width="334.043" ResizeMode="CanMinimize">
     <Grid>
         <Label Content="Modalidades" HorizontalAlignment="Left" Margin="125,24,0,0" VerticalAlignment="Top"/>
         <Button Content="Pistola de ar " HorizontalAlignment="Left" Margin="92,69,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>

@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="notamodalidademasculina" Height="239.362" Width="431.382">
+        Title="notamodalidademasculina" Height="233.42" Width="315.945" ResizeMode="CanMinimize">
     <Grid>
-        <ComboBox x:Name="notas" HorizontalAlignment="Left" Margin="161,50,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.473,0.489"/>
-        <Label Content="Nota: " HorizontalAlignment="Left" Margin="124,92,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nome:" HorizontalAlignment="Left" Margin="202,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="notatexto" HorizontalAlignment="Left" Height="23" Margin="195,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Cadastrar nota" HorizontalAlignment="Left" Margin="100,149,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click"/>
-        <Button Content="Sair" HorizontalAlignment="Left" Margin="264,149,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="195,10,0,0" VerticalAlignment="Top" Width="65"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="notas" HorizontalAlignment="Left" Margin="80,50,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.473,0.489"/>
+        <Label Content="Nota: " HorizontalAlignment="Left" Margin="43,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="121,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="notatexto" HorizontalAlignment="Left" Height="23" Margin="114,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Cadastrar nota" HorizontalAlignment="Left" Margin="19,149,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="183,149,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="114,10,0,0" VerticalAlignment="Top" Width="65"/>
 
     </Grid>
 </Window>

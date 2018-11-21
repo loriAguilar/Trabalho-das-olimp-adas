@@ -22,11 +22,31 @@ namespace Olimpiadas_trabalho
         public notamodalidadefeminina()
         {
             InitializeComponent();
+            for(int g=0;g<Controle.contador;g++)
+            {
+                notas.Items.Add(Controle.competidores[g].Nome.ToString());
+            }
         }
 
         #region cadastrar nota
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string clicked = Convert.ToString(notas.SelectionBoxItem);
+            double nota = double.Parse(notatexto.Text);
+            try
+            {
+                for(int r=0;r<Controle.contador;r++)
+                {
+                    if(Controle.competidores[r].Nome==clicked)
+                    {
+                        
+                    }
+                }
+            }
+            catch(Exception f)
+            {
+                MessageBox.Show(f.Message);
+            }
 
         }
         #endregion

@@ -63,8 +63,9 @@ namespace Olimpiadas_trabalho
         {
             //cadastrar competição
             Competicao a = new Competicao(nome);
-            contaCompeticoes++;
+            
             comp.Add(a);
+            contaCompeticoes++;
         }
     }
 }
