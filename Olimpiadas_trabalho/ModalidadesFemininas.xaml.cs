@@ -22,66 +22,35 @@ namespace Olimpiadas_trabalho
         public ModalidadesFemininas()
         {
             InitializeComponent();
-            for(int d=0;d<Controle.contador;d++)
-            {
-                Controle.competidores[d] = new Competicao_feminina();
-            }
         }
-
-        //evento cadastrar
-        private void Button_Click(object sender, RoutedEventArgs e)
+        
+        private void buttonCadastrarCompeticao(object sender, RoutedEventArgs e)
         {
-            Competicao_feminina comp = new Competicao_feminina();
+            //evento cadastrar
+            int indiceParaCadastrar = Controle.indiceCompetidores;
 
-            try
-            {
-                string nome = Controle.auxf;
-                for (int c = 0; c < Controle.contador; c++)
-                {
-                    if (Controle.competidores[c].Nome == nome)
-                    {
-                        if (pistoladear.IsChecked == true)
-                        {
-                            Controle.competidores[c].Competidora.Competicao_disputada[0] = "pistoladear";
-                        }
-
-                        if (carabinadear.IsChecked == true)
-                        {
-                            Controle.competidores[c].Competidora.Competicao_disputada[1] = "carabinadear";
-                        }
-
-                        if (pistola.IsChecked == true)
-                        {
-                            Controle.competidores[c].Competidora.Competicao_disputada[2] = "pistola";
-                        }
-
-                        if (carabinatrespos.IsChecked == true)
-                        {
-                            Controle.competidores[c].Competidora.Competicao_disputada[3] = "carabinatrespos";
-                        }
-
-                        if (skeet.IsChecked == true)
-                        {
-                            Controle.competidores[c].Competidora.Competicao_disputada[4] = "skeet";
-                        }
-
-                        if (fossa.IsChecked == true)
-                        {
-                            Controle.competidores[c].Competidora.Competicao_disputada[5] = "fossa";
-                        }
-                    }
-                }
-            }
-            catch(Exception k)
-            {
-                MessageBox.Show("Erro: " + k.Message);
-            }
+            if (pistoladear.IsChecked == true)
+                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("pistoladear");
             
+            if (carabinadear.IsChecked == true)
+                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("carabinadear");
+
+            if (pistola.IsChecked == true)
+                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("pistola");
+
+            if (carabinatrespos.IsChecked == true)
+                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("carabinatrespos");
+
+            if (skeet.IsChecked == true)
+                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("skeet");
+
+            if (fossa.IsChecked == true)
+                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("fossa");
         }
 
-        //evento sair
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            //evento sair
             this.Close();
         }
     }

@@ -39,8 +39,6 @@ namespace Olimpiadas_trabalho
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-
             ModalidadesFemininas modalidadesFemininas = new ModalidadesFemininas();
             ModalidadesMasculinas modalidadesMasculinas = new ModalidadesMasculinas();
             string selecionado = Convert.ToString(combonomes.SelectionBoxItem);
@@ -54,7 +52,7 @@ namespace Olimpiadas_trabalho
                     {
                         if (Controle.competidores[b].Sexo == 'F')
                         {
-                            Controle.auxf = selecionado;
+                            Controle.indiceCompetidores = b;
                             modalidadesFemininas.ShowDialog();
                         }
                         else { modalidadesMasculinas.ShowDialog(); }

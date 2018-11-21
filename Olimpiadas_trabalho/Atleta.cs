@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace Olimpiadas_trabalho
 {
-    //ultimo teste
     class Atleta
     {
-        protected string nome;
-        protected string pais;
-        protected string comite;
-        protected char sexo;
-        private Competicao_feminina competidora; //relção de composição com atleta, sem atleta, não tem competidores
-        private Competicao_masculina competidor;
+        private string nome;
+        private string pais;
+        private string comite;
+        private char sexo;
+        private int contaCompeticoes = 0;
+        public IList<Competicao> comp { get; private set; } //relção de composição com atleta, sem atleta, não tem competidores
 
-        //construtores classe atleta
+        #region Construtores
         public Atleta()
         {
             this.nome = null;
@@ -30,48 +29,43 @@ namespace Olimpiadas_trabalho
             this.Pais = pais;
             this.Comite = comite;
             this.Sexo = sexo;
-            //this.Competidora = new Competicao_feminina();
-            //this.Competidor = new Competicao_masculina();
         }
+        #endregion
 
+        #region Getters and Setters
+        public int ContaCompetidores
+        {
+            get { return contaCompeticoes; }
+        }
         public string Nome
         {
             get { return nome; }
             set { nome = value; }
         }
-
         public char Sexo
         {
             get { return sexo; }
             set { sexo = value; }
         }
-
-
-
-
         public string Pais
         {
             get { return pais; }
             set { pais = value; }
         }
-
         public string Comite
         {
             get { return comite; }
             set { comite = value; }
         }
-
-         public Competicao_feminina Competidora
-         {
-             get { return competidora; }
-             set { competidora = value; }
-         }
+        #endregion
         
-         public Competicao_masculina Competidor
-         {
-             get { return competidor; }
-             set { competidor = value; }
-         }
+        public void cadastrarCompeticao(string nome)
+        {
+            //cadastrar competição
+            Competicao a = new Competicao(nome);
+            contaCompeticoes++;
+            comp.Add(a);
+        }
     }
 }
 

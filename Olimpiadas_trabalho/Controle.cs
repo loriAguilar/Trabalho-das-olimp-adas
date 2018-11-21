@@ -12,6 +12,7 @@ namespace Olimpiadas_trabalho
         public static List<Atleta> competidores = new List<Atleta>();
         public const int tam = 10;
         public static int contador = 0;
-        public static string auxf;
+        public static int indiceCompetidores;
     }
+    
 }

@@ -16,7 +16,7 @@
         <CheckBox x:Name="skeet" Content="Skeet" HorizontalAlignment="Left" Margin="68,248,0,0" VerticalAlignment="Top" Height="18" Width="65"/>
         <CheckBox x:Name="fossa" Content="Fossa olímpica" HorizontalAlignment="Left" Margin="68,286,0,0" VerticalAlignment="Top" Height="18" Width="128"/>
         <TextBlock HorizontalAlignment="Left" Margin="26,51,0,0" TextWrapping="Wrap" Text="*Selecione apenas as modalidades que deseja participar" VerticalAlignment="Top" Height="15"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="26,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="Button_Click"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="26,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="buttonCadastrarCompeticao"/>
         <Button Content="Sair" HorizontalAlignment="Left" Margin="211,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="Button_Click_1"/>
 
     </Grid>

@@ -92,8 +92,7 @@
       <DependentUpon>Area_administrativa.xaml</DependentUpon>
     </Compile>
     <Compile Include="Atleta.cs" />
-    <Compile Include="Competicao_feminina.cs" />
-    <Compile Include="Competicao_masculina.cs" />
+    <Compile Include="Competicao.cs" />
     <Compile Include="Competidores.xaml.cs">
       <DependentUpon>Competidores.xaml</DependentUpon>
     </Compile>
