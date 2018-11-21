@@ -11,7 +11,8 @@ namespace Olimpiadas_trabalho
         //Está cadastrando direitinho
         public static List<Atleta> atletas = new List<Atleta>();
         public static List<Competicao> competicoes = new List<Competicao>();
-        public static int indiceAtleta;
+        public static int indiceAtleta=0;
+        public static int aux ;
 
 
         public static string nomedamodalidade;

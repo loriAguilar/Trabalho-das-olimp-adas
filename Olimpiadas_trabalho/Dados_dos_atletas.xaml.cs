@@ -30,29 +30,39 @@ namespace Olimpiadas_trabalho
         {
             
             MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + texboxpais.Text + " \nComitê: " + texboxcomite.Text);
-            Salvar_arquivo();
+           // Salvar_arquivo();
 
 
         }
         #region arquivo
         public void Salvar_arquivo()
         {
-            string path = "atletassalvos.txt";
-            if (!File.Exists(path))
+            try
             {
-                StreamWriter criararquivo = new StreamWriter(path);
-                criararquivo.Close();
+                string path = "atletassalvos.txt";
+                if (!File.Exists(path))
+                {
+                    StreamWriter criararquivo = new StreamWriter(path);
+                    criararquivo.Close();
+                }
+                
+                StreamWriter arquivo = new StreamWriter(path);
+                for (int i = 0; i < Controle.aux; i++)
+                {
+                    arquivo.WriteLine(".:ATLETAS CADASTRADOS:.");
+                    arquivo.WriteLine("{0}º Atleta ", Controle.atletas[i]);
+                    arquivo.WriteLine("Nome: " + Controle.atletas[i].Nome);
+                    arquivo.WriteLine("País: " + Controle.atletas[i].Pais);
+                    arquivo.WriteLine("Comitê: " + Controle.atletas[i].Comite);
+                    arquivo.WriteLine("Sexo: " + Controle.atletas[i].Sexo);
+                    arquivo.WriteLine("---------------------------------------------------------------------------------------------------------------");
+                }
+                arquivo.Close();
             }
-
-            StreamWriter arquivo = new StreamWriter(path);
-            arquivo.WriteLine(".:ATLETAS CADASTRADOS:.");
-            arquivo.WriteLine("{0}º Atleta ", Controle.atletas[Controle.indiceAtleta+1]);
-            arquivo.WriteLine("Nome: " + Controle.atletas[Controle.indiceAtleta].Nome);
-            arquivo.WriteLine("País: " + Controle.atletas[Controle.indiceAtleta].Pais);
-            arquivo.WriteLine("Comitê: " + Controle.atletas[Controle.indiceAtleta].Comite);
-            arquivo.WriteLine("Sexo: " + Controle.atletas[Controle.indiceAtleta].Sexo);
-            arquivo.WriteLine("---------------------------------------------------------------------------------------------------------------");
-            arquivo.Close();
+            catch(Exception pl)
+            {
+                MessageBox.Show(pl.Message);
+            }
         }
         #endregion
 
