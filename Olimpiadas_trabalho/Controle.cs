@@ -20,4 +20,5 @@ namespace Olimpiadas_trabalho
         public static string nome = null;
     }
     
+    
 }
