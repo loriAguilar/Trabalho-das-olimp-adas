@@ -12,8 +12,6 @@ namespace Olimpiadas_trabalho
         private string pais;
         private string comite;
         private char sexo;
-        private int contaCompeticoes = 0;
-        public List<Competicao> comp = new List<Competicao>(); //relção de composição com atleta, sem atleta, não tem competidores
 
         #region Construtores
         public Atleta()
@@ -33,10 +31,6 @@ namespace Olimpiadas_trabalho
         #endregion
 
         #region Getters and Setters
-        public int ContaCompetidores
-        {
-            get { return contaCompeticoes; }
-        }
         public string Nome
         {
             get { return nome; }
@@ -58,15 +52,7 @@ namespace Olimpiadas_trabalho
             set { comite = value; }
         }
         #endregion
-        
-        public void cadastrarCompeticao(string nome)
-        {
-            //cadastrar competição
-            Competicao a = new Competicao(nome);
-            
-            comp.Add(a);
-            contaCompeticoes++;
-        }
+       
     }
 }
 
