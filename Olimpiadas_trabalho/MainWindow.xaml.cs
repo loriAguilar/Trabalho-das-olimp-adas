@@ -51,7 +51,7 @@ namespace Olimpiadas_trabalho
         #region sair
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            this.Close();            
         }
 
         #endregion

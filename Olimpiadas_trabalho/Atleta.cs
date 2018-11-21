@@ -13,7 +13,7 @@ namespace Olimpiadas_trabalho
         private string comite;
         private char sexo;
         private int contaCompeticoes = 0;
-        public IList<Competicao> comp { get; private set; } //relção de composição com atleta, sem atleta, não tem competidores
+        public List<Competicao> comp = new List<Competicao>(); //relção de composição com atleta, sem atleta, não tem competidores
 
         #region Construtores
         public Atleta()
