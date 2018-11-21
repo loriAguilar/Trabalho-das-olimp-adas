@@ -76,6 +76,7 @@ namespace Olimpiadas_trabalho
             }
 
             MessageBox.Show("Cadastro conluído com sucesso", "", MessageBoxButton.OK);
+            this.Close();
         }
         #endregion
 
