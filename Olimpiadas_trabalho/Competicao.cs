@@ -10,8 +10,14 @@ namespace Olimpiadas_trabalho
     {
         public string nomeCompeticao;
         private double[] notas = new double[3];
+        private int idAtleta;
 
         #region Getters e Setters
+        public int IdAtleta
+        {
+            get { return idAtleta; }
+            set { idAtleta = value; }
+        }
         public string NomeCompeticao
         {
             get { return NomeCompeticao; }
@@ -26,9 +32,10 @@ namespace Olimpiadas_trabalho
         #endregion
 
         #region Construtor
-        public Competicao(string nome)
+        public Competicao(string nome, int idAtleta)
         {
             NomeCompeticao = nome;
+            this.IdAtleta = idAtleta;
         }
         #endregion
 
