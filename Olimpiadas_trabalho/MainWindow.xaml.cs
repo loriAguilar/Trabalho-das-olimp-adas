@@ -28,6 +28,7 @@ namespace Olimpiadas_trabalho
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            //teste teste
             //janela que será usada para cadastrar os dados dos atletas e  quais competições eles vão participar
             //MessageBox.Show("Teste");
             Competidores competidores = new Competidores();

@@ -76,7 +76,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Fase_classificatoria.xaml">
+    <Page Include="entregademedalhasf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="entregademedalhasm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="faseclassificatoriaf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="faseclassificatoriam.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fasefinalf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fasefinalm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -100,8 +120,23 @@
     <Compile Include="Dados_dos_atletas.xaml.cs">
       <DependentUpon>Dados_dos_atletas.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Fase_classificatoria.xaml.cs">
-      <DependentUpon>Fase_classificatoria.xaml</DependentUpon>
+    <Compile Include="entregademedalhasf.xaml.cs">
+      <DependentUpon>entregademedalhasf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="entregademedalhasm.xaml.cs">
+      <DependentUpon>entregademedalhasm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="faseclassificatoriaf.xaml.cs">
+      <DependentUpon>faseclassificatoriaf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="faseclassificatoriam.xaml.cs">
+      <DependentUpon>faseclassificatoriam.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fasefinalf.xaml.cs">
+      <DependentUpon>fasefinalf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fasefinalm.xaml.cs">
+      <DependentUpon>fasefinalm.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -119,6 +154,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="notamodalidadefeminina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="notamodalidademasculina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModalidadesFemininas.xaml.cs">
@@ -129,6 +172,12 @@
     </Compile>
     <Compile Include="Nomesparamodalidades.xaml.cs">
       <DependentUpon>Nomesparamodalidades.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="notamodalidadefeminina.xaml.cs">
+      <DependentUpon>notamodalidadefeminina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="notamodalidademasculina.xaml.cs">
+      <DependentUpon>notamodalidademasculina.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
