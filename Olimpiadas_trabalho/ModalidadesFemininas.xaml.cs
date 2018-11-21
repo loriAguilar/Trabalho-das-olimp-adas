@@ -24,7 +24,8 @@ namespace Olimpiadas_trabalho
             InitializeComponent();
             labelNomeAtleta.Content = Controle.atletas[Controle.indiceAtleta].Nome;
         }
-        
+
+        #region cadastrar
         private void buttonCadastrarCompeticao(object sender, RoutedEventArgs e)
         {
             //evento cadastrar
@@ -73,7 +74,10 @@ namespace Olimpiadas_trabalho
             {
                 Console.WriteLine("Cadastrado {0}: {1}", Controle.atletas[Controle.competicoes[pos].IdAtleta].Nome, Controle.competicoes[pos].NomeCompeticao);
             }
+
+            MessageBox.Show("Cadastro conluído com sucesso", "", MessageBoxButton.OK);
         }
+        #endregion
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
