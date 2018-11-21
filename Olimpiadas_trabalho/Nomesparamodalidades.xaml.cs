@@ -37,10 +37,10 @@ namespace Olimpiadas_trabalho
             }
         }
 
+        //botão selecionar
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-
+            
             ModalidadesFemininas modalidadesFemininas = new ModalidadesFemininas();
             ModalidadesMasculinas modalidadesMasculinas = new ModalidadesMasculinas();
             string selecionado = Convert.ToString(combonomes.SelectionBoxItem);
@@ -77,6 +77,7 @@ namespace Olimpiadas_trabalho
 
         }
 
+        //botão sair
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
