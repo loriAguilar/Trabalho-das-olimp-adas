@@ -8,6 +8,7 @@ namespace Olimpiadas_trabalho
 {
     class Atleta
     {
+        //teste
         private string nome;
         private string pais;
         private string comite;
