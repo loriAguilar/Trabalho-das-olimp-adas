@@ -23,7 +23,7 @@ namespace Olimpiadas_trabalho
         {
             InitializeComponent();
             //toda vez que alguém for cadastrado, vai se adicionar um nome a combobox
-            MessageBox.Show(Convert.ToString(Controle.contador));
+            
             try
             {
                 for (int a = 0; a < (Controle.contador); a++)
