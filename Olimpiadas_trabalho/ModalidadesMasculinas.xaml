@@ -9,18 +9,18 @@
     <Grid>
         <Label Content="Modalidades" HorizontalAlignment="Left" Margin="137,11,0,0" VerticalAlignment="Top" Height="24"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="24" Margin="121,10,0,0" VerticalAlignment="Top" Width="115"/>
-        <CheckBox Content="Pistola de ar 10m Data:25/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,81,0,0" VerticalAlignment="Top" Height="36" Width="290"/>
-        <CheckBox Content="Carabina de ar 10m Data: 26/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,122,0,0" VerticalAlignment="Top" Height="34" Width="305"/>
-        <CheckBox Content="Pistola rápida 25m Data: 27/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,161,0,0" VerticalAlignment="Top" Height="31" Width="305"/>
-        <CheckBox Content="Carabina três posições 50m Data: 30/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,264,0,0" VerticalAlignment="Top" Height="31" Width="357" RenderTransformOrigin="0.504,1.623"/>
-        <CheckBox Content="Skeet Data: 31/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,300,0,0" VerticalAlignment="Top" Height="31" Width="326"/>
-        <CheckBox Content="Fossa olímpica Data: 01/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,336,0,0" VerticalAlignment="Top" Height="31" Width="271"/>
+        <CheckBox x:Name="pistoladear" Content="Pistola de ar 10m Data:25/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,81,0,0" VerticalAlignment="Top" Height="36" Width="290"/>
+        <CheckBox x:Name="carabinadear" Content="Carabina de ar 10m Data: 26/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,122,0,0" VerticalAlignment="Top" Height="34" Width="305"/>
+        <CheckBox x:Name="pistolarapida25m" Content="Pistola rápida 25m Data: 27/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,161,0,0" VerticalAlignment="Top" Height="31" Width="305"/>
+        <CheckBox x:Name="carabinatrespos" Content="Carabina três posições 50m Data: 30/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,264,0,0" VerticalAlignment="Top" Height="31" Width="357" RenderTransformOrigin="0.504,1.623"/>
+        <CheckBox x:Name="skeet" Content="Skeet Data: 31/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,300,0,0" VerticalAlignment="Top" Height="31" Width="326"/>
+        <CheckBox x:Name="fossaolimpica" Content="Fossa olímpica Data: 01/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,336,0,0" VerticalAlignment="Top" Height="31" Width="271"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,43,0,0" TextWrapping="Wrap" Text="*Selecione apenas as modalidades que deseja participar" VerticalAlignment="Top" Height="15"/>
         <Button Content="Cadastrar " HorizontalAlignment="Left" Margin="28,412,0,0" VerticalAlignment="Top" Width="80" Height="21" Click="Button_Click"/>
         <Button Content="Sair" HorizontalAlignment="Left" Margin="213,412,0,0" VerticalAlignment="Top" Width="75" Height="21" Click="Button_Click_1"/>
-        <CheckBox Content="Pistola 50m Data: 28/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,197,0,0" VerticalAlignment="Top" Height="28" Width="290"/>
-        <CheckBox Content="Carabina deitado 50m Data: 29/08/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,230,0,0" VerticalAlignment="Top" Width="326" Height="29"/>
-        <CheckBox Content="Fossa olímpica dupla Data: 02/07/2020" HorizontalAlignment="Left" Margin="70,372,0,0" VerticalAlignment="Top" Height="35" Width="271"/>
+        <CheckBox x:Name="pistola" Content="Pistola 50m Data: 28/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,197,0,0" VerticalAlignment="Top" Height="28" Width="290"/>
+        <CheckBox x:Name="carabina" Content="Carabina deitado 50m Data: 29/08/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="70,230,0,0" VerticalAlignment="Top" Width="326" Height="29"/>
+        <CheckBox x:Name="fossaolimpicadupla" Content="Fossa olímpica dupla Data: 02/07/2020" HorizontalAlignment="Left" Margin="70,372,0,0" VerticalAlignment="Top" Height="35" Width="271"/>
 
     </Grid>
 </Window>

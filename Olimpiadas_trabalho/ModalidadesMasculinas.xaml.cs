@@ -29,8 +29,64 @@ namespace Olimpiadas_trabalho
         //evento cadastrar
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            int indiceParaCadastrar = Controle.indiceAtleta;
+            Competicao ajd;
 
+            if (pistoladear.IsChecked == true)
+            {
+                ajd = new Competicao("pistoladear", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
 
+            if (carabinadear.IsChecked == true)
+            {
+                ajd = new Competicao("carabinadear", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
+
+            if (pistolarapida25m.IsChecked == true)
+            {
+                ajd = new Competicao("pistolarapida25m", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
+
+            if (pistola.IsChecked == true)
+            {
+                ajd = new Competicao("pistola", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
+
+            if (carabina.IsChecked == true)
+            {
+                ajd = new Competicao("carabina", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
+
+            if (carabinatrespos.IsChecked == true)
+            {
+                ajd = new Competicao("carabinatrespos", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
+
+            if (skeet.IsChecked == true)
+            {
+                ajd = new Competicao("skeet", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
+
+            if (fossaolimpica.IsChecked == true)
+            {
+                ajd = new Competicao("fossaolimpica", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
+
+            if (fossaolimpicadupla.IsChecked == true)
+            {
+                ajd = new Competicao("fossaolimpicadupla", Controle.indiceAtleta);
+                Controle.competicoes.Add(ajd);
+            }
+
+            MessageBox.Show("Cadastro concluído com sucesso");
             SalvaarquivoM();
         }
 
