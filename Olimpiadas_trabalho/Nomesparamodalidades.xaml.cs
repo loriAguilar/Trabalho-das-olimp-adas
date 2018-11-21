@@ -53,6 +53,7 @@ namespace Olimpiadas_trabalho
                         if (Controle.competidores[b].Sexo == 'F')
                         {
                             Controle.indiceCompetidores = b;
+                            Controle.nome = selecionado;
                             modalidadesFemininas.ShowDialog();
                         }
                         else {Controle.indiceCompetidores=b; modalidadesMasculinas.ShowDialog(); }
