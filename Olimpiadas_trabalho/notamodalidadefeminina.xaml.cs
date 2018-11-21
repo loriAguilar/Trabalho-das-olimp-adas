@@ -24,7 +24,7 @@ namespace Olimpiadas_trabalho
             InitializeComponent();
             for(int g=0;g<Controle.contador;g++)
             {
-                notas.Items.Add(Controle.competidores[g].Nome.ToString());
+                notas.Items.Add(Controle.atletas[g].Nome.ToString());
             }
         }
 
@@ -37,7 +37,7 @@ namespace Olimpiadas_trabalho
             {
                 for(int r=0;r<Controle.contador;r++)
                 {
-                    if(Controle.competidores[r].Nome==clicked)
+                    if(Controle.atletas[r].Nome==clicked)
                     {
                         
                     }

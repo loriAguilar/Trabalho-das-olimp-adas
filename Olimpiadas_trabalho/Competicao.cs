@@ -20,7 +20,7 @@ namespace Olimpiadas_trabalho
         }
         public string NomeCompeticao
         {
-            get { return NomeCompeticao; }
+            get { return nomeCompeticao; }
             private set { nomeCompeticao = value; }
         }
         public double[] Notas

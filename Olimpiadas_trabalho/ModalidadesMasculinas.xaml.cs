@@ -22,6 +22,7 @@ namespace Olimpiadas_trabalho
         public ModalidadesMasculinas()
         {
             InitializeComponent();
+            
         }
 
         //evento cadastrar

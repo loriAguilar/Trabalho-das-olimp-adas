@@ -9,15 +9,16 @@
     <Grid>
         <Label Content="Modalidades" HorizontalAlignment="Left" Margin="137,11,0,0" VerticalAlignment="Top" Height="24"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="24" Margin="121,10,0,0" VerticalAlignment="Top" Width="115"/>
-        <CheckBox x:Name="pistoladear" Content="Pistola de ar 10m  Data: 25/07/2020 Local: Tóquio " HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Height="18" Width="288"/>
-        <CheckBox x:Name="carabinadear" Content="Carabina de ar 10m Data: 26/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Height="18" Width="299"/>
-        <CheckBox x:Name="pistola" Content="Pistola 25m Data: 27/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top" Height="17" Width="254"/>
-        <CheckBox x:Name="carabinatrespos" Content="Carabina três posições 50m Data: 28/07/2020 Local: Tóquio " HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Height="18" Width="338"/>
-        <CheckBox x:Name="skeet" Content="Skeet Data: 29/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Height="18" Width="226"/>
-        <CheckBox x:Name="fossa" Content="Fossa olímpica Data: 30/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top" Height="18" Width="276" RenderTransformOrigin="0.526,0.412"/>
-        <TextBlock HorizontalAlignment="Left" Margin="26,51,0,0" TextWrapping="Wrap" Text="*Selecione apenas as modalidades que deseja participar" VerticalAlignment="Top" Height="15"/>
+        <CheckBox x:Name="pistoladear" Content="Pistola de ar 10m  Data: 25/07/2020 Local: Tóquio " HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Height="18" Width="288"/>
+        <CheckBox x:Name="carabinadear" Content="Carabina de ar 10m Data: 26/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Height="18" Width="299"/>
+        <CheckBox x:Name="pistola" Content="Pistola 25m Data: 27/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Height="17" Width="254"/>
+        <CheckBox x:Name="carabinatrespos" Content="Carabina três posições 50m Data: 28/07/2020 Local: Tóquio " HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top" Height="18" Width="338"/>
+        <CheckBox x:Name="skeet" Content="Skeet Data: 29/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Height="18" Width="226"/>
+        <CheckBox x:Name="fossa" Content="Fossa olímpica Data: 30/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Height="18" Width="276" RenderTransformOrigin="0.526,0.412"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,75,0,0" TextWrapping="Wrap" Text="*Selecione apenas as modalidades que deseja participar" VerticalAlignment="Top" Height="15"/>
         <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="26,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="buttonCadastrarCompeticao"/>
         <Button Content="Sair" HorizontalAlignment="Left" Margin="211,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="Button_Click_1"/>
+        <Label x:Name="labelNomeAtleta" Content="Atleta: " HorizontalAlignment="Left" Margin="48,44,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

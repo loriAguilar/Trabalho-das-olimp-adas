@@ -23,12 +23,11 @@ namespace Olimpiadas_trabalho
         {
             InitializeComponent();
             //toda vez que alguém for cadastrado, vai se adicionar um nome a combobox
-            MessageBox.Show(Convert.ToString(Controle.contador));
             try
             {
-                for (int a = 0; a < (Controle.contador); a++)
+                for (int a = 0; a < (Controle.atletas.Count); a++)
                 {
-                    combonomes.Items.Add(Controle.competidores[(a)].Nome.ToString());
+                    combonomes.Items.Add(Controle.atletas[(a)].Nome.ToString());
                 }
             }
             catch (Exception e)
@@ -39,36 +38,30 @@ namespace Olimpiadas_trabalho
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ModalidadesFemininas modalidadesFemininas = new ModalidadesFemininas();
-            ModalidadesMasculinas modalidadesMasculinas = new ModalidadesMasculinas();
             string selecionado = Convert.ToString(combonomes.SelectionBoxItem);
            
             try
             {
-
-                for (int b = 0; b < Controle.contador; b++)
-                {
-                    if (Controle.competidores[b].Nome == selecionado)
+                for (int pos = 0; pos < Controle.atletas.Count; pos++)
+                    if (Controle.atletas[pos].Nome == selecionado)
                     {
-                        if (Controle.competidores[b].Sexo == 'F')
+                        Controle.indiceAtleta = pos;
+                        if (Controle.atletas[pos].Sexo == 'F') //mulher
                         {
-                            Controle.indiceCompetidores = b;
-                            Controle.nome = selecionado;
+                            ModalidadesFemininas modalidadesFemininas = new ModalidadesFemininas();
                             modalidadesFemininas.ShowDialog();
                         }
-                        else {Controle.indiceCompetidores=b; modalidadesMasculinas.ShowDialog(); }
+                        else //homem
+                        {
+                            ModalidadesMasculinas modalidadesMasculinas = new ModalidadesMasculinas();
+                            modalidadesMasculinas.ShowDialog();
+                        }
                     }
-
-                }
-
-
             }
             catch (Exception x)
             {
                 MessageBox.Show(x.Message);
             }
-            
-
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

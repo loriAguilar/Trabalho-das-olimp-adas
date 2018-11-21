@@ -36,8 +36,8 @@ namespace Olimpiadas_trabalho
             comite = dados.texboxcomite.Text;
             Atleta x;
             x = new Atleta(nome, pais, comite, sexo);
-            Controle.competidores.Add(x);
-            Controle.contador++;
+            Controle.atletas.Add(x);
+            Controle.indiceAtleta++;
             this.Close();
         }
 
@@ -53,8 +53,8 @@ namespace Olimpiadas_trabalho
             comite = dados.texboxcomite.Text;
             Atleta x;
             x = new Atleta(nome, pais, comite, sexo);
-            Controle.competidores.Add(x);
-            Controle.contador++;
+            Controle.atletas.Add(x);
+            Controle.indiceAtleta++;
             this.Close();
         }
 

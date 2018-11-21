@@ -22,30 +22,57 @@ namespace Olimpiadas_trabalho
         public ModalidadesFemininas()
         {
             InitializeComponent();
+            labelNomeAtleta.Content = Controle.atletas[Controle.indiceAtleta].Nome;
         }
         
         private void buttonCadastrarCompeticao(object sender, RoutedEventArgs e)
         {
             //evento cadastrar
-            int indiceParaCadastrar = Controle.indiceCompetidores;
-
+            int indiceParaCadastrar = Controle.indiceAtleta;
+            Competicao aux;
+            
             if (pistoladear.IsChecked == true)
-                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("pistoladear");
+            {
+                aux = new Competicao("pistoladear", Controle.indiceAtleta);
+                Controle.competicoes.Add(aux);
+            }
             
             if (carabinadear.IsChecked == true)
-                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("carabinadear");
+            {
+                aux = new Competicao("carabinadear", Controle.indiceAtleta);
+                Controle.competicoes.Add(aux);
+            }
 
             if (pistola.IsChecked == true)
-                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("pistola");
+            {
+                aux = new Competicao("pistola", Controle.indiceAtleta);
+                Controle.competicoes.Add(aux);
+            }
 
             if (carabinatrespos.IsChecked == true)
-                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("carabinatrespos");
-
+            {
+                aux = new Competicao("carabinatrespos", Controle.indiceAtleta);
+                Controle.competicoes.Add(aux);
+            }
+            
             if (skeet.IsChecked == true)
-                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("skeet");
+            {
+                aux = new Competicao("skeet", Controle.indiceAtleta);
+                Controle.competicoes.Add(aux);
+            }
 
             if (fossa.IsChecked == true)
-                Controle.competidores[indiceParaCadastrar].cadastrarCompeticao("fossa");
+            {
+                aux = new Competicao("fossa", Controle.indiceAtleta);
+                Controle.competicoes.Add(aux);
+            }
+
+            //testar coiso cadastrados
+            Console.WriteLine(Controle.atletas[indiceParaCadastrar].Nome);
+            for (int pos = 0; pos < Controle.competicoes.Count; pos++)
+            {
+                Console.WriteLine("Cadastrado {0}: {1}", Controle.atletas[Controle.competicoes[pos].IdAtleta].Nome, Controle.competicoes[pos].NomeCompeticao);
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
