@@ -9,7 +9,7 @@
     <Grid>
         <Label Content="Modalidades" HorizontalAlignment="Left" Margin="137,11,0,0" VerticalAlignment="Top" Height="24"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="24" Margin="121,10,0,0" VerticalAlignment="Top" Width="115"/>
-        <CheckBox Content="Pistola de ar 10m" HorizontalAlignment="Left" Margin="70,82,0,0" VerticalAlignment="Top" Height="18" Width="148"/>
+        <CheckBox Content="Pistola de ar 10m Data:01/05/2020" HorizontalAlignment="Left" Margin="70,85,0,0" VerticalAlignment="Top" Height="15" Width="200"/>
         <CheckBox Content="Carabina de ar 10m" HorizontalAlignment="Left" Margin="70,121,0,0" VerticalAlignment="Top" Height="18" Width="163"/>
         <CheckBox Content="Pistola rápida 25m" HorizontalAlignment="Left" Margin="70,161,0,0" VerticalAlignment="Top" Height="17" Width="107"/>
         <CheckBox Content="Carabina três posições 50m" HorizontalAlignment="Left" Margin="70,264,0,0" VerticalAlignment="Top" Height="18" Width="218" RenderTransformOrigin="0.504,1.623"/>

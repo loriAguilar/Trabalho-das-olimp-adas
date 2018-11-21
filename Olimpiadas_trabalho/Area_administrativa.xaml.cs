@@ -24,27 +24,57 @@ namespace Olimpiadas_trabalho
             InitializeComponent();
         }
 
-        //gera evento "fase classificatória"
+        #region fase classificatória
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             //Botão que mostra todas as pessoas que se cadastraram 
             //Botão para cadastrar a nota que cada pessoa tirou em diferentes competições
             //posso fazer um botão para cada competição e colocar isso acima dentro deles
-            Fase_classificatoria classificatoria = new Fase_classificatoria();
-            classificatoria.ShowDialog();
+            if(feminino.IsChecked==true)
+            {
+                faseclassificatoriaf faseclassificatoriaf = new faseclassificatoriaf();
+                faseclassificatoriaf.Show();
+            }
+            else
+            {
+                faseclassificatoriam faseclassificatoriam = new faseclassificatoriam();
+                faseclassificatoriam.Show();
+            }
         }
+        #endregion
 
-        //gera evento "fase final"
+        #region fase final
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            //janela: um botão para mostrar as pessoas que estão classificadas e um botão para cadastrar as notas que cada uma das pessoas teve em cada modalidade
+            if(feminino.IsChecked==true)
+            {
+                fasefinalf fasefinalf = new fasefinalf();
+                fasefinalf.Show();
+            }
+            else
+            {
+                fasefinalm fasefinalm = new fasefinalm();
+                fasefinalm.Show();
+            }
         }
+        #endregion
 
-        //gera evento "entrega de medalhas"
+        #region entrega de medalhas
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             //janela que vai ter os resultados finais (medalhas de ouro, prata e bronze de cada uma das modalidades
+            if (feminino.IsChecked == true)
+            {
+                entregademedalhasf entregademedalhasf = new entregademedalhasf();
+                entregademedalhasf.Show();
+            }
+            else
+            {
+                entregademedalhasm entregademedalhasm = new entregademedalhasm();
+                entregademedalhasm.Show();
+            }
         }
+        #endregion
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
