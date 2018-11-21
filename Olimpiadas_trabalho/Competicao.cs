@@ -8,7 +8,7 @@ namespace Olimpiadas_trabalho
 {
     class Competicao
     {
-        public string nomeCompeticao;
+        private string nomeCompeticao;
         private double[] notas = new double[3];
         private int idAtleta;
 
@@ -16,17 +16,17 @@ namespace Olimpiadas_trabalho
         public int IdAtleta
         {
             get { return idAtleta; }
-            set { idAtleta = value; }
+            private set { idAtleta = value; }
         }
         public string NomeCompeticao
         {
             get { return NomeCompeticao; }
-            set { nomeCompeticao = value; }
+            private set { nomeCompeticao = value; }
         }
         public double[] Notas
         {
             get { return notas; }
-            set { notas = value; }
+            private set { notas = value; }
         }
 
         #endregion
