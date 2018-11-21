@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="Fase_classificatoria" Height="335.106" Width="389.894">
+        Title="Fase_classificatoria" Height="335.106" Width="389.894" ResizeMode="CanMinimize">
     <Grid>
 
     </Grid>

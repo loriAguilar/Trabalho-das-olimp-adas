@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="Dados_dos_atletas" Height="285.638" Width="303.723">
+        Title="Dados_dos_atletas" Height="285.638" Width="303.723" ResizeMode="CanMinimize">
     <Grid>
         <Label Content="Nome:" HorizontalAlignment="Left" Margin="40,79,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textnome" HorizontalAlignment="Left" Height="23" Margin="103,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="textnome_TextChanged"/>

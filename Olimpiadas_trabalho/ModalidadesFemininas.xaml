@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="ModalidadesFemininas" Height="402.128" Width="338.83">
+        Title="ModalidadesFemininas" Height="402.128" Width="338.83" ResizeMode="CanMinimize">
     <Grid>
         <Label Content="Modalidades" HorizontalAlignment="Left" Margin="137,11,0,0" VerticalAlignment="Top" Height="24"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="24" Margin="121,10,0,0" VerticalAlignment="Top" Width="115"/>
