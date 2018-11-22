@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="faseclassificatoriam" Height="525" Width="319.681">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Label Content="Modalidades" HorizontalAlignment="Left" Margin="125,24,0,0" VerticalAlignment="Top"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="111,24,0,0" VerticalAlignment="Top" Width="109"/>
         <Button Content="Pistola de ar 10m " HorizontalAlignment="Left" Margin="92,69,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
@@ -17,8 +20,8 @@
         <Button Content="Carabina três posições 50m" HorizontalAlignment="Left" Margin="92,292,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_5"/>
         <Button Content="Skeet" HorizontalAlignment="Left" Margin="92,332,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_6"/>
         <Button Content="Fossa olímpica" HorizontalAlignment="Left" Margin="92,374,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_7"/>
-        <Button Content="Sair" HorizontalAlignment="Left" Margin="94,452,0,-53" VerticalAlignment="Top" Width="148" Click="Button_Click_9"/>
-        <Button Content="Fossa olímpica dupla" HorizontalAlignment="Left" Margin="94,413,0,-14" VerticalAlignment="Top" Width="148" Click="Button_Click_8"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="94,452,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_9"/>
+        <Button Content="Fossa olímpica dupla" HorizontalAlignment="Left" Margin="94,413,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_8"/>
 
     </Grid>
 </Window>

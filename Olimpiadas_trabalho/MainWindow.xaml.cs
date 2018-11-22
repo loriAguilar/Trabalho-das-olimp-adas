@@ -30,11 +30,16 @@ namespace Olimpiadas_trabalho
         #region competidores
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            //teste teste
-            //janela que será usada para cadastrar os dados dos atletas e  quais competições eles vão participar
-            //MessageBox.Show("Teste");
-            Competidores competidores = new Competidores();
-            competidores.ShowDialog();
+            if (!Controle.telaCadastroEstaDeativada)
+            {
+                //janela que será usada para cadastrar os dados dos atletas e  quais competições eles vão participar
+                Competidores competidores = new Competidores();
+                competidores.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Não é possível cadastrar atletas. A competição já começou.", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
         #endregion
 

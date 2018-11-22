@@ -9,11 +9,11 @@
     <Grid>
         <Label Content="Área administrativa" HorizontalAlignment="Left" Margin="119,17,0,0" VerticalAlignment="Top" Width="132" FontWeight="ExtraBold"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="103,17,0,0" VerticalAlignment="Top" Width="148"/>
-        <Button Content="Fase classificatória" HorizontalAlignment="Left" Margin="119,95,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click_1"/>
-        <Button Content="Fase final" HorizontalAlignment="Left" Margin="119,134,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click_2"/>
-        <Button Content="Entrega de medalhas" HorizontalAlignment="Left" Margin="119,173,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click_3"/>
-        <Button Content="Sair" HorizontalAlignment="Left" Margin="140,214,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <RadioButton x:Name="feminino" Content="Competição feminina" HorizontalAlignment="Left" Margin="30,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.323,0.367"/>
+        <Button x:Name="botaoClassificatoria" Content="Fase classificatória" HorizontalAlignment="Left" Margin="119,95,0,0" VerticalAlignment="Top" Width="116" Click="buttonFaseEliminatoria"/>
+        <Button x:Name="botaoFinal" Content="Fase final" HorizontalAlignment="Left" Margin="119,134,0,0" VerticalAlignment="Top" Width="116" Click="buttonFaseFinal"/>
+        <Button x:Name="botaoMedalhas" Content="Entrega de medalhas" HorizontalAlignment="Left" Margin="119,173,0,0" VerticalAlignment="Top" Width="116" Click="buttonEntregaMedalhas"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="140,214,0,0" VerticalAlignment="Top" Width="75" Click="buttonSair"/>
+        <RadioButton IsChecked="True" x:Name="feminino" Content="Competição feminina" HorizontalAlignment="Left" Margin="30,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.323,0.367"/>
         <RadioButton x:Name="masculino" Content="Competição masculina" HorizontalAlignment="Left" Margin="183,67,0,0" VerticalAlignment="Top"/>
 
     </Grid>

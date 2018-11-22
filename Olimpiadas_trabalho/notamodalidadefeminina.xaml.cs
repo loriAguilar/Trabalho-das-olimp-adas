@@ -19,29 +19,41 @@ namespace Olimpiadas_trabalho
     /// </summary>
     public partial class notamodalidadefeminina : Window
     {
-        public notamodalidadefeminina()
+        public double fase;
+
+        public notamodalidadefeminina(double fase)
         {
             InitializeComponent();
-            for(int g=0;g<Controle.contador;g++)
+            this.fase = fase;
+            labelNomeModalidade.Content = Controle.nomedamodalidade;
+
+            try
             {
-                notas.Items.Add(Controle.atletas[g].Nome.ToString());
+                for (int a = 0; a < (Controle.competicoes.Count); a++)
+                {
+                    if (Controle.competicoes[a].NomeCompeticao == Controle.nomedamodalidade)
+                        Controle.indiceAtleta = Controle.competicoes[a].IdAtleta;
+                    notas.Items.Add(Controle.atletas[Controle.indiceAtleta].Nome.ToString());
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
 
         #region cadastrar nota
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string clicked = Convert.ToString(notas.SelectionBoxItem);
-            double nota = double.Parse(notatexto.Text);
             try
             {
-                for(int r=0;r<Controle.contador;r++)
-                {
-                    if(Controle.atletas[r].Nome==clicked)
-                    {
-                        
-                    }
-                }
+                double nota = Convert.ToDouble(notatexto.Text);
+                Controle.competicoes[Controle.indiceAtleta].Notas[fase] = nota;
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("Digite um valor válido", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                notatexto.Clear();
             }
             catch(Exception f)
             {

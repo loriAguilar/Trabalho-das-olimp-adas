@@ -24,59 +24,81 @@ namespace Olimpiadas_trabalho
             InitializeComponent();
         }
 
-        #region fase classificatória
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        #region Botões Fases
+        private void buttonFaseEliminatoria(object sender, RoutedEventArgs e)
         {
-            //Botão que mostra todas as pessoas que se cadastraram 
-            //Botão para cadastrar a nota que cada pessoa tirou em diferentes competições
-            //posso fazer um botão para cada competição e colocar isso acima dentro deles
-            if(feminino.IsChecked==true)
+            if(!Controle.telaCadastroEstaDeativada)
             {
-                faseclassificatoriaf faseclassificatoriaf = new faseclassificatoriaf();
-                faseclassificatoriaf.Show();
+                if (MessageBox.Show("A partir de agora, você não poderá cadastrar atletas.\nDeseja continuar?", "Erro", MessageBoxButton.YesNo, MessageBoxImage.Error) == MessageBoxResult.Yes)
+                {
+                    Controle.telaCadastroEstaDeativada = true;
+                }
+            }
+
+            if(Controle.telaCadastroEstaDeativada)
+            {
+                //Botão que mostra todas as pessoas que se cadastraram 
+                //Botão para cadastrar a nota que cada pessoa tirou em diferentes competições
+                //posso fazer um botão para cada competição e colocar isso acima dentro deles
+                if (feminino.IsChecked == true)
+                {
+                    faseclassificatoriaf faseclassificatoriaf = new faseclassificatoriaf();
+                    faseclassificatoriaf.Show();
+                }
+                else
+                {
+                    faseclassificatoriam faseclassificatoriam = new faseclassificatoriam();
+                    faseclassificatoriam.Show();
+                }
+            }
+        }
+
+        private void buttonFaseFinal(object sender, RoutedEventArgs e)
+        {
+            if (Controle.abrirFase(2))
+            {
+                if (feminino.IsChecked == true)
+                {
+                    fasefinalf fasefinalf = new fasefinalf();
+                    fasefinalf.Show();
+                }
+                else
+                {
+                    fasefinalm fasefinalm = new fasefinalm();
+                    fasefinalm.Show();
+                }
             }
             else
             {
-                faseclassificatoriam faseclassificatoriam = new faseclassificatoriam();
-                faseclassificatoriam.Show();
+                MessageBox.Show("Você precisa preencher todas as notas da fase anterior", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-        #endregion
-
-        #region fase final
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        
+        private void buttonEntregaMedalhas(object sender, RoutedEventArgs e)
         {
-            if(feminino.IsChecked==true)
+            if(Controle.abrirFase(3))
             {
-                fasefinalf fasefinalf = new fasefinalf();
-                fasefinalf.Show();
+                //janela que vai ter os resultados finais (medalhas de ouro, prata e bronze de cada uma das modalidades
+                if (feminino.IsChecked == true)
+                {
+                    entregademedalhasf entregademedalhasf = new entregademedalhasf();
+                    entregademedalhasf.Show();
+                }
+                else
+                {
+                    entregademedalhasm entregademedalhasm = new entregademedalhasm();
+                    entregademedalhasm.Show();
+                }
             }
             else
             {
-                fasefinalm fasefinalm = new fasefinalm();
-                fasefinalm.Show();
+                MessageBox.Show("Você precisa preencher todas as notas da fase anterior", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+            
         }
         #endregion
 
-        #region entrega de medalhas
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            //janela que vai ter os resultados finais (medalhas de ouro, prata e bronze de cada uma das modalidades
-            if (feminino.IsChecked == true)
-            {
-                entregademedalhasf entregademedalhasf = new entregademedalhasf();
-                entregademedalhasf.Show();
-            }
-            else
-            {
-                entregademedalhasm entregademedalhasm = new entregademedalhasm();
-                entregademedalhasm.Show();
-            }
-        }
-        #endregion
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void buttonSair(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
