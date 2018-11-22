@@ -32,8 +32,10 @@ namespace Olimpiadas_trabalho
                 for (int a = 0; a < (Controle.competicoes.Count); a++)
                 {
                     if (Controle.competicoes[a].NomeCompeticao == Controle.nomedamodalidade)
+                    {
                         Controle.indiceAtleta = Controle.competicoes[a].IdAtleta;
-                    notas.Items.Add(Controle.atletas[Controle.indiceAtleta].Nome.ToString());
+                        notas.Items.Add(Controle.atletas[Controle.indiceAtleta].Nome.ToString());
+                    }
                 }
             }
             catch (Exception e)
@@ -49,6 +51,8 @@ namespace Olimpiadas_trabalho
             {
                 double nota = Convert.ToDouble(notatexto.Text);
                 Controle.competicoes[Controle.indiceAtleta].cadastrarNota(fase, nota);
+                MessageBox.Show("Cadastro efetuado com sucesso!");
+                notatexto.Clear();
             }
             catch(FormatException)
             {
