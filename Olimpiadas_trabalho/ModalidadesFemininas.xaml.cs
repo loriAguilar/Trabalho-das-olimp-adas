@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Olimpiadas_trabalho
 {
@@ -24,7 +25,8 @@ namespace Olimpiadas_trabalho
             InitializeComponent();
             labelNomeAtleta.Content = Controle.atletas[Controle.indiceAtleta].Nome;
         }
-        
+
+        #region cadastrar
         private void buttonCadastrarCompeticao(object sender, RoutedEventArgs e)
         {
             //evento cadastrar
@@ -73,12 +75,45 @@ namespace Olimpiadas_trabalho
             {
                 Console.WriteLine("Cadastrado {0}: {1}", Controle.atletas[Controle.competicoes[pos].IdAtleta].Nome, Controle.competicoes[pos].NomeCompeticao);
             }
+
+            SalvaarquivoF();
+            MessageBox.Show("Cadastro conluído com sucesso", "", MessageBoxButton.OK);
+            this.Close();
         }
+        #endregion
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             //evento sair
             this.Close();
+        }
+
+        public void SalvaarquivoF()
+        {
+            string path2 = "CompetidoresCompeticaoFeminina.txt";
+            try
+            {
+                if(!File.Exists(path2))
+                {
+                    StreamWriter criar = new StreamWriter(path2);
+                    criar.Close();
+                }
+
+                StreamWriter arquivo = new StreamWriter(path2);
+                
+                    arquivo.WriteLine("Nome: " + Controle.atletas[Controle.indiceAtleta].Nome);
+                for (int a = 0; a < Controle.competicoes.Count;a++)
+                {
+                    arquivo.WriteLine("Competição {0}: {1} ",(a+1),Controle.competicoes[a].NomeCompeticao);
+                }
+                
+
+                arquivo.Close();
+            }
+            catch(Exception p)
+            {
+                MessageBox.Show(p.Message);
+            }
         }
     }
 }

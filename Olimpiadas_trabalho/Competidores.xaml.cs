@@ -27,6 +27,7 @@ namespace Olimpiadas_trabalho
         //inscrever atleta para competição feminina //só os dados do atleta
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Controle.aux++;
             Dados_dos_atletas dados = new Dados_dos_atletas();
             dados.ShowDialog();
             string nome, pais, comite;
@@ -38,12 +39,14 @@ namespace Olimpiadas_trabalho
             x = new Atleta(nome, pais, comite, sexo);
             Controle.atletas.Add(x);
             Controle.indiceAtleta++;
-            this.Close();
+            dados.Salvar_arquivo();
+            
         }
 
         //inscrever atleta para competição masculina //só os dados do atleta
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            Controle.aux++;
             Dados_dos_atletas dados = new Dados_dos_atletas();
             dados.ShowDialog();
             string nome, pais, comite;
@@ -55,7 +58,8 @@ namespace Olimpiadas_trabalho
             x = new Atleta(nome, pais, comite, sexo);
             Controle.atletas.Add(x);
             Controle.indiceAtleta++;
-            this.Close();
+            dados.Salvar_arquivo();
+           
         }
 
         //botão responsável por desencadear o evento "sair"
@@ -72,6 +76,8 @@ namespace Olimpiadas_trabalho
             Nomesparamodalidades nomes = new Nomesparamodalidades();
             nomes.ShowDialog();
         }
+
+        
     }
 }
 
