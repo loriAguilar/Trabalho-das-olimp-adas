@@ -27,6 +27,7 @@ namespace Olimpiadas_trabalho
         #region pistola de ar
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Controle.nomedamodalidade = "pistoladear";
             notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(2);
             notamodalidadefeminina.ShowDialog();
         }
@@ -35,6 +36,7 @@ namespace Olimpiadas_trabalho
         #region carabina de ar
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            Controle.nomedamodalidade = "carabinadear";
             notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(2);
             notamodalidadefeminina.ShowDialog();
         }
@@ -44,6 +46,7 @@ namespace Olimpiadas_trabalho
         #region pistola
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            Controle.nomedamodalidade = "pistola";
             notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(2);
             notamodalidadefeminina.ShowDialog();
         }
@@ -52,6 +55,7 @@ namespace Olimpiadas_trabalho
         #region carabina de três posições
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            Controle.nomedamodalidade = "carabinatrespos";
             notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(2);
             notamodalidadefeminina.ShowDialog();
         }
@@ -60,6 +64,7 @@ namespace Olimpiadas_trabalho
         #region skeet
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
+            Controle.nomedamodalidade = "skeet";
             notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(2);
             notamodalidadefeminina.ShowDialog();
         }
@@ -68,6 +73,7 @@ namespace Olimpiadas_trabalho
         #region fossa olímpica
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
+            Controle.nomedamodalidade = "fossa";
             notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(2);
             notamodalidadefeminina.ShowDialog();
         }
