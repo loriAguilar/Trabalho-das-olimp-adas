@@ -19,9 +19,9 @@ namespace Olimpiadas_trabalho
     /// </summary>
     public partial class notamodalidadefeminina : Window
     {
-        public double fase;
+        public int fase;
 
-        public notamodalidadefeminina(double fase)
+        public notamodalidadefeminina(int fase)
         {
             InitializeComponent();
             this.fase = fase;
@@ -48,7 +48,7 @@ namespace Olimpiadas_trabalho
             try
             {
                 double nota = Convert.ToDouble(notatexto.Text);
-                Controle.competicoes[Controle.indiceAtleta].Notas[fase] = nota;
+                Controle.competicoes[Controle.indiceAtleta].cadastrarNota(fase, nota);
             }
             catch(FormatException)
             {

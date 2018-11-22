@@ -28,7 +28,7 @@ namespace Olimpiadas_trabalho
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Controle.nomedamodalidade = "pistoladear";
-            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina();
+            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(1);
             notamodalidadefeminina.ShowDialog();
         }
         #endregion
@@ -38,7 +38,7 @@ namespace Olimpiadas_trabalho
         {
             Controle.nomedamodalidade = "carabinadear";
             MessageBox.Show(Controle.nomedamodalidade);
-            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina();
+            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(1);
             notamodalidadefeminina.ShowDialog();
         }
 
@@ -48,7 +48,7 @@ namespace Olimpiadas_trabalho
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Controle.nomedamodalidade = "pistola";
-            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina();
+            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(1);
             notamodalidadefeminina.ShowDialog();
         }
         #endregion
@@ -57,7 +57,7 @@ namespace Olimpiadas_trabalho
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             Controle.nomedamodalidade = "carabinatrespos";
-            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina();
+            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(1);
             notamodalidadefeminina.ShowDialog();
         }
         #endregion
@@ -66,7 +66,7 @@ namespace Olimpiadas_trabalho
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             Controle.nomedamodalidade = "skeet";
-            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina();
+            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(1);
             notamodalidadefeminina.ShowDialog();
         }
         #endregion
@@ -75,7 +75,7 @@ namespace Olimpiadas_trabalho
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             Controle.nomedamodalidade = "fossa";
-            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina();
+            notamodalidadefeminina notamodalidadefeminina = new notamodalidadefeminina(1);
             notamodalidadefeminina.ShowDialog();
         }
         #endregion

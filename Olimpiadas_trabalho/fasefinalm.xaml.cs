@@ -27,7 +27,7 @@ namespace Olimpiadas_trabalho
         #region pistola de ar
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
         #endregion
@@ -35,7 +35,7 @@ namespace Olimpiadas_trabalho
         #region carabina de ar
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
 
@@ -44,7 +44,7 @@ namespace Olimpiadas_trabalho
         #region pistola deitado
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
         #endregion
@@ -52,7 +52,7 @@ namespace Olimpiadas_trabalho
         #region pistola
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
         #endregion
@@ -60,7 +60,7 @@ namespace Olimpiadas_trabalho
         #region carabina deitado
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
         #endregion
@@ -68,7 +68,7 @@ namespace Olimpiadas_trabalho
         #region carabina três posições
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
 
@@ -77,7 +77,7 @@ namespace Olimpiadas_trabalho
         #region skeet
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
         #endregion
@@ -85,7 +85,7 @@ namespace Olimpiadas_trabalho
         #region fossa olímpica
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
         #endregion
@@ -93,7 +93,7 @@ namespace Olimpiadas_trabalho
         #region fossa olímpica dupla
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina();
+            notamodalidademasculina notamodalidademasculina = new notamodalidademasculina(2);
             notamodalidademasculina.ShowDialog();
         }
         #endregion
