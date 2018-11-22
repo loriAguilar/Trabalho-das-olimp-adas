@@ -25,6 +25,7 @@ namespace Olimpiadas_trabalho
             InitializeComponent();
             this.fase = fase;
 
+            labelNomeModalidade.Content = Controle.nomedamodalidade;
             try
             {
                 for (int a = 0; a < (Controle.competicoes.Count); a++)
