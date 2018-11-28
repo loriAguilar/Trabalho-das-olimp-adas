@@ -55,7 +55,7 @@ namespace Olimpiadas_trabalho
 
         private void buttonFaseFinal(object sender, RoutedEventArgs e)
         {
-            if (Controle.abrirFase(2))
+            if (Controle.abrirFase(1))
             {
                 if (feminino.IsChecked == true)
                 {
@@ -76,7 +76,7 @@ namespace Olimpiadas_trabalho
         
         private void buttonEntregaMedalhas(object sender, RoutedEventArgs e)
         {
-            if(Controle.abrirFase(3))
+            if(Controle.abrirFase(2))
             {
                 //janela que vai ter os resultados finais (medalhas de ouro, prata e bronze de cada uma das modalidades
                 if (feminino.IsChecked == true)
