@@ -33,8 +33,11 @@ namespace Olimpiadas_trabalho
                 {
                     if (Controle.competicoes[a].NomeCompeticao == Controle.nomedamodalidade)
                     {
-                        Controle.indiceAtleta = Controle.competicoes[a].IdAtleta;
-                        notas.Items.Add(Controle.atletas[Controle.indiceAtleta].Nome.ToString());
+                        if (Controle.atletas[a].Sexo == 'F')
+                        {
+                            Controle.indiceAtleta = Controle.competicoes[a].IdAtleta;
+                            notas.Items.Add(Controle.atletas[Controle.indiceAtleta].Nome.ToString());
+                        }
                     }
                 }
             }
