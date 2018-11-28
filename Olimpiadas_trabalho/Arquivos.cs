@@ -5,7 +5,14 @@ namespace Olimpiadas_trabalho
 {
     static class Arquivos
     {
-        public static void Salvar(List<Atleta> atleta) //Salva no arquivo Atletas.txt, os atletas contidos na lista de atletas
+        #region Leitura e Escrita
+
+        #region Escrita
+        /// <summary>
+        /// Salva no arquivo Atletas.txt, os atletas contidos na lista de atletas
+        /// </summary>
+        /// <param name="atleta"></param>
+        public static void Salvar(List<Atleta> atleta)
         {
             Carregar(atleta);
             StreamWriter salvos = new StreamWriter("Atletas.txt", true); //Caso o arquivo já exista adiciona-se mais linhas
@@ -20,7 +27,13 @@ namespace Olimpiadas_trabalho
             }
             salvos.Close();
         }
+        #endregion
 
+        #region Leitura
+        /// <summary>
+        /// Carrega para a lista de atletas os atletas salvos no arquivo de Atletas
+        /// </summary>
+        /// <param name="atleta"></param>
         public static void Carregar(List<Atleta> atleta) //Carrega para a lista de atletas os atletas salvos no arquivo de Atletas
         {
             if (File.Exists("Atletas.txt"))
@@ -36,11 +49,11 @@ namespace Olimpiadas_trabalho
 
                     if (Cadastrado(atleta, item)) //Caso o atleta não esteja cadastrado adiciona-se à lista de atletas
                         atleta.Add(item);
-
-
                 }
+                load.Close();
             }
         }
+        #endregion
 
         private static bool Cadastrado(List<Atleta> atletas, Atleta atleta) //Verifica se um atleta já está cadastrado na lista de atletas
         {
@@ -56,5 +69,7 @@ namespace Olimpiadas_trabalho
 
             return (Existe);
         }
+
+        #endregion
     }
 }
