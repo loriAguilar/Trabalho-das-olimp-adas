@@ -3,6 +3,9 @@ using System.IO;
 
 namespace Olimpiadas_trabalho
 {
+    /// <summary>
+    /// Salvamento e Carregamento de arquivos
+    /// </summary>
     static class Arquivos
     {
         #region Leitura e Escrita
@@ -47,7 +50,7 @@ namespace Olimpiadas_trabalho
                     linha = load.ReadLine().Split(';');
                     Atleta item = new Atleta(linha[0], linha[1], linha[2], char.Parse(linha[3])); //Cria um atleta com as informações da linha
 
-                    if (Cadastrado(atleta, item)) //Caso o atleta não esteja cadastrado adiciona-se à lista de atletas
+                    if (!Cadastrado(atleta, item)) //Caso o atleta não esteja cadastrado adiciona-se à lista de atletas
                         atleta.Add(item);
                 }
                 load.Close();
