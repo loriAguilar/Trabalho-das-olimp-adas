@@ -18,7 +18,7 @@ namespace Olimpiadas_trabalho
         public static void Salvar(List<Atleta> atleta)
         {
             Carregar(atleta);
-            StreamWriter salvos = new StreamWriter("Atletas.txt", true); //Caso o arquivo já exista adiciona-se mais linhas
+            StreamWriter salvos = new StreamWriter("Atletas.txt"); //Caso o arquivo já exista adiciona-se mais linhas
 
             foreach (var item in atleta)
             {

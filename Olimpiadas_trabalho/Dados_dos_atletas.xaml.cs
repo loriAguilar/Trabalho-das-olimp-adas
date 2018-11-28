@@ -22,6 +22,7 @@ namespace Olimpiadas_trabalho
             MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + texboxpais.Text + " \nComitê: " + texboxcomite.Text);
             Salvar_arquivo();
         }
+
         #region arquivo
         public void Salvar_arquivo()
         {
@@ -31,6 +32,7 @@ namespace Olimpiadas_trabalho
                 StreamWriter arquivo = new StreamWriter(path);
                 int index = 0;
                 arquivo.WriteLine(".:ATLETAS CADASTRADOS:.");
+
                 foreach (var item in Controle.atletas)
                 {
                     index++;                    
