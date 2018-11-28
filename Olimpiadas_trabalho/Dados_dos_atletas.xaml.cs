@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.IO;
 
 namespace Olimpiadas_trabalho
 {
@@ -28,9 +18,9 @@ namespace Olimpiadas_trabalho
         //gera o evento "cadastrar"
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
             MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + texboxpais.Text + " \nComitê: " + texboxcomite.Text);
-            Salvar_arquivo();            
+            Salvar_arquivo();
         }
         #region arquivo
         public void Salvar_arquivo()
@@ -38,27 +28,24 @@ namespace Olimpiadas_trabalho
             try
             {
                 string path = "atletassalvos.txt";
-                if (!File.Exists(path))
-                {
-                    StreamWriter criararquivo = new StreamWriter(path);
-                    criararquivo.Close();
-                }
-                
                 StreamWriter arquivo = new StreamWriter(path);
-                for (int i = 0; i < Controle.aux; i++)
+                int index = 0;
+                arquivo.WriteLine(".:ATLETAS CADASTRADOS:.");
+                foreach (var item in Controle.atletas)
                 {
-                    arquivo.WriteLine(".:ATLETAS CADASTRADOS:.");
-                    arquivo.WriteLine("{0}º Atleta ", Controle.atletas[i]);
-                    arquivo.WriteLine("Nome: " + Controle.atletas[i].Nome);
-                    arquivo.WriteLine("País: " + Controle.atletas[i].Pais);
-                    arquivo.WriteLine("Comitê: " + Controle.atletas[i].Comite);
-                    arquivo.WriteLine("Sexo: " + Controle.atletas[i].Sexo);
+                    index++;                    
+                    arquivo.WriteLine("{0}º Atleta ", index);
+                    arquivo.WriteLine("Nome: " + item.Nome);
+                    arquivo.WriteLine("País: " + item.Pais);
+                    arquivo.WriteLine("Comitê: " + item.Comite);
+                    arquivo.WriteLine("Sexo: " + item.Sexo);
                     arquivo.WriteLine("---------------------------------------------------------------------------------------------------------------");
                 }
+
                 arquivo.Close();
                 Arquivos.Salvar(Controle.atletas);
             }
-            catch(Exception pl)
+            catch (Exception pl)
             {
                 MessageBox.Show(pl.Message);
             }
