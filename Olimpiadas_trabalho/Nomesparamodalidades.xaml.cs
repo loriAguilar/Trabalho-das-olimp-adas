@@ -25,9 +25,14 @@ namespace Olimpiadas_trabalho
             //toda vez que alguém for cadastrado, vai se adicionar um nome a combobox
             try
             {
-                for (int a = 0; a < (Controle.atletas.Count); a++)
+                //for (int a = 0; a < (Controle.atletas.Count); a++)
+                //{
+                //    combonomes.Items.Add(Controle.atletas[(a)].Nome.ToString());
+                //}
+                Arquivos.Carregar(Controle.atletas);
+                foreach (var item in Controle.atletas)
                 {
-                    combonomes.Items.Add(Controle.atletas[(a)].Nome.ToString());
+                    combonomes.Items.Add(item.Nome.ToString());
                 }
             }
             catch (Exception e)
@@ -54,7 +59,7 @@ namespace Olimpiadas_trabalho
                         else //homem
                         {
                             ModalidadesMasculinas modalidadesMasculinas = new ModalidadesMasculinas();
-                            modalidadesMasculinas.ShowDialog();
+                            modalidadesMasculinas.ShowDialog();                            
                         }
                     }
             }
