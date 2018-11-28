@@ -30,9 +30,9 @@ namespace Olimpiadas_trabalho
         {
             
             MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + texboxpais.Text + " \nComitê: " + texboxcomite.Text);
-           // Salvar_arquivo();
+            // Salvar_arquivo();
 
-
+            Arquivos.Salvar(Controle.atletas);
         }
         #region arquivo
         public void Salvar_arquivo()

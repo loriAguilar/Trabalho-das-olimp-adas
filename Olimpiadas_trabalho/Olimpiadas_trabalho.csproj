@@ -111,6 +111,7 @@
     <Compile Include="Area_administrativa.xaml.cs">
       <DependentUpon>Area_administrativa.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Arquivos.cs" />
     <Compile Include="Atleta.cs" />
     <Compile Include="Competicao.cs" />
     <Compile Include="Competidores.xaml.cs">
