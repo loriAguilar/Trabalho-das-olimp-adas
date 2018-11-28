@@ -19,7 +19,7 @@ namespace Olimpiadas_trabalho
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + texboxpais.Text + " \nComitê: " + texboxcomite.Text);
+            MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + comboBox_Paises.Text + " \nComitê: " + comboBox_Comite.Text);
             Salvar_arquivo();
         }
 

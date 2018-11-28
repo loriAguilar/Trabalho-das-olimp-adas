@@ -11,13 +11,52 @@
         <TextBox x:Name="textnome" HorizontalAlignment="Left" Height="23" Margin="103,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="textnome_TextChanged"/>
 
         <Label Content="País:" HorizontalAlignment="Left" Margin="40,117,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="texboxpais" HorizontalAlignment="Left" Height="23" Margin="103,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="texboxpais_TextChanged"/>
         <Label Content="Comitê:" HorizontalAlignment="Left" Margin="34,151,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="texboxcomite" HorizontalAlignment="Left" Height="23" Margin="103,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="texboxcomite_TextChanged"/>
         <Label Content="Cadastro de dados dos atletas" HorizontalAlignment="Left" Margin="70,30,0,0" VerticalAlignment="Top" FontWeight="ExtraBold"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="62,30,0,0" VerticalAlignment="Top" Width="204"/>
         <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="56,202,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Sair" HorizontalAlignment="Left" Margin="180,202,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <ComboBox x:Name="comboBox_Paises" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" RenderTransformOrigin="1.382,5.552" Margin="103,121,0,0">
+            <ComboBoxItem Content="Alemanha"/>
+            <ComboBoxItem Content="Atletas Olímpicos Independentes"/>
+            <ComboBoxItem Content="Austrália"/>
+            <ComboBoxItem Content="Brasil"/>
+            <ComboBoxItem Content="China"/>
+            <ComboBoxItem Content="Coreia do Norte"/>
+            <ComboBoxItem Content="Coreia do Sul"/>
+            <ComboBoxItem Content="Croácia"/>
+            <ComboBoxItem Content="Estados Unidos"/>
+            <ComboBoxItem Content="França"/>
+            <ComboBoxItem Content="Grã-Bretanha"/>
+            <ComboBoxItem Content="Grécia"/>
+            <ComboBoxItem Content="Itália"/>
+            <ComboBoxItem Content="Nova Zelândia"/>
+            <ComboBoxItem Content="Rússia"/>
+            <ComboBoxItem Content="Suécia"/>
+            <ComboBoxItem Content="Suíça"/>
+            <ComboBoxItem Content="Ucrânia"/>
+        </ComboBox>
+        <ComboBox x:Name="comboBox_Comite" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="103,155,0,0">
+            <ComboBoxItem Content="Australian Olympic Committee"/>
+            <ComboBoxItem Content="British Olympic Association"/>
+            <ComboBoxItem Content="Chinese Olympic Committee"/>
+            <ComboBoxItem Content="Comitato Olimpico Nazionale Italiano"/>
+            <ComboBoxItem Content="Comité National Olympique et Sportif Français"/>
+            <ComboBoxItem Content="Comitê Olímpico do Brasil	"/>
+            <ComboBoxItem Content="Comité Olympique Hellénique"/>
+            <ComboBoxItem Content="Croatian Olympic Committee"/>
+            <ComboBoxItem Content="Deutscher Olympischer Sportbund"/>
+            <ComboBoxItem Content="International Olympic Committee"/>
+            <ComboBoxItem Content="Korean Olympic Committee"/>
+            <ComboBoxItem Content="National Olympic Committee of Ukraine"/>
+            <ComboBoxItem Content="New Zealand Olympic Committee"/>
+            <ComboBoxItem Content="Olympic Committee of the Democratic People's Republic of Korea"/>
+            <ComboBoxItem Content="Russian Olympic Committee"/>
+            <ComboBoxItem Content="Swedish Olympic Committee"/>
+            <ComboBoxItem Content="Swiss Olympic Association"/>
+            <ComboBoxItem Content="United States Olympic Committee"/>
+        </ComboBox>
+
 
     </Grid>
 </Window>

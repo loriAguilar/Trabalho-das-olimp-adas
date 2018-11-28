@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="MainWindow" Height="304.787" Width="357.978" ResizeMode="CanMinimize">
+        Title="Japão 2020" Height="304.787" Width="357.978" ResizeMode="CanMinimize">
     <Grid>
         <Button Content="Administrativo" HorizontalAlignment="Left" Margin="61,69,0,0" VerticalAlignment="Top" Width="222" Height="40" Click="Button_Click_2"/>
         <Button Content="Competidores" HorizontalAlignment="Left" Margin="61,143,0,0" VerticalAlignment="Top" Width="222" Height="41" Click="Button_Click_1"/>

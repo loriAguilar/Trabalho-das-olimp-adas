@@ -33,8 +33,8 @@ namespace Olimpiadas_trabalho
             string nome, pais, comite;
             char sexo = 'F';
             nome = dados.textnome.Text;
-            pais = dados.texboxpais.Text;
-            comite = dados.texboxcomite.Text;
+            pais = dados.comboBox_Paises.Text;
+            comite = dados.comboBox_Comite.Text;
             Atleta x;
             x = new Atleta(nome, pais, comite, sexo);
             Controle.atletas.Add(x);
@@ -52,8 +52,8 @@ namespace Olimpiadas_trabalho
             string nome, pais, comite;
             char sexo = 'M';
             nome = dados.textnome.Text;
-            pais = dados.texboxpais.Text;
-            comite = dados.texboxcomite.Text;
+            pais = dados.comboBox_Paises.Text;
+            comite = dados.comboBox_Comite.Text;
             Atleta x;
             x = new Atleta(nome, pais, comite, sexo);
             Controle.atletas.Add(x);
