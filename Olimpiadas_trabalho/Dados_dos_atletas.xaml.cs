@@ -10,9 +10,12 @@ namespace Olimpiadas_trabalho
     /// </summary>
     public partial class Dados_dos_atletas : Window
     {
+
         public Dados_dos_atletas()
         {
             InitializeComponent();
+            
+
         }
 
         //gera o evento "cadastrar"
@@ -20,7 +23,6 @@ namespace Olimpiadas_trabalho
         {
             // cadastra o atleta
             Controle.Cadastrar_Atleta_na_Olimpiada('M', textnome.Text, comboBox_Paises.Text, comboBox_Comite.Text);
-
             // exibe confirmação de cadastro
             MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + comboBox_Paises.Text + " \nComitê: " + comboBox_Comite.Text);
             Salvar_arquivo();

@@ -79,7 +79,7 @@ namespace Olimpiadas_trabalho
             try
             {
 
-
+                System.Windows.MessageBox.Show(Convert.ToString(competicoes.Count));
                 for (int a = 0; a < competicoes.Count; a++)
                 {
                     
@@ -169,7 +169,9 @@ namespace Olimpiadas_trabalho
             {
                 System.Windows.MessageBox.Show(ç.Message);
             }
-    }
+    
+        }
+     }
 
 
 }

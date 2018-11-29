@@ -27,7 +27,8 @@ namespace Olimpiadas_trabalho
         //inscrever atleta para competição feminina //só os dados do atleta
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Dados_dos_atletas dados = new Dados_dos_atletas();
+            
+            Dados_das_atletas_Femininas dados = new Dados_das_atletas_Femininas();
             dados.ShowDialog();
             //Controle.Cadastrar_Atleta_na_Olimpiada('F');
         }
@@ -35,6 +36,7 @@ namespace Olimpiadas_trabalho
         //inscrever atleta para competição masculina //só os dados do atleta
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+           
             Dados_dos_atletas dados = new Dados_dos_atletas();
             dados.ShowDialog();
             //Controle.Cadastrar_Atleta_na_Olimpiada('M');
