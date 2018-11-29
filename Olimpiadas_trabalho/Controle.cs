@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO; 
 
 namespace Olimpiadas_trabalho
 {
@@ -17,9 +18,8 @@ namespace Olimpiadas_trabalho
         
         public static string nomedamodalidade;
         public const int tam = 10;
-        public static int contador = 0;
+        // public static int contador = 0;
         public static string nome = null;
-
 
         #region verifica se pode abrir as janelas
         public static double notaMinima = -1; //considerada nota não preenchida
@@ -35,6 +35,37 @@ namespace Olimpiadas_trabalho
             return true;
         }
         #endregion
+
+        public static void Cadastrar_Atleta_na_Olimpiada(char sexo, string nome, string pais, string comite)
+        {
+            aux++;
+            Atleta x;
+            x = new Atleta(nome, pais, comite, sexo);
+            atletas.Add(x);
+            indiceAtleta++;
+        }
+
+        public static void Relatorio_Atletas()
+        {
+            string path = "atletassalvos.txt";
+            StreamWriter arquivo = new StreamWriter(path);
+            int index = 0;
+            arquivo.WriteLine(".:ATLETAS CADASTRADOS:.");
+
+            foreach (var item in atletas)
+            {
+                index++;
+                arquivo.WriteLine("{0}º Atleta ", index);
+                arquivo.WriteLine("Nome: " + item.Nome);
+                arquivo.WriteLine("País: " + item.Pais);
+                arquivo.WriteLine("Comitê: " + item.Comite);
+                arquivo.WriteLine("Sexo: " + item.Sexo);
+                arquivo.WriteLine("---------------------------------------------------------------------------------------------------------------");
+            }
+
+            arquivo.Close();
+            Arquivos.Salvar(atletas);
+        }
     }
 
 

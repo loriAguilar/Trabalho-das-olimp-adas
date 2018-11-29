@@ -1,25 +1,33 @@
 ﻿using System;
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace Olimpiadas_trabalho
 {
     /// <summary>
-    /// Lógica interna para Dados_dos_atletas.xaml
+    /// Lógica interna para Dados_das_atletas_Femininas.xaml
     /// </summary>
-    public partial class Dados_dos_atletas : Window
+    public partial class Dados_das_atletas_Femininas : Window
     {
-        public Dados_dos_atletas()
+        public Dados_das_atletas_Femininas()
         {
             InitializeComponent();
         }
 
-        //gera o evento "cadastrar"
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // cadastra o atleta
-            Controle.Cadastrar_Atleta_na_Olimpiada('M', textnome.Text, comboBox_Paises.Text, comboBox_Comite.Text);
+            Controle.Cadastrar_Atleta_na_Olimpiada('F', textnome.Text, comboBox_Paises.Text, comboBox_Comite.Text);            
 
             // exibe confirmação de cadastro
             MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + comboBox_Paises.Text + " \nComitê: " + comboBox_Comite.Text);
@@ -31,7 +39,6 @@ namespace Olimpiadas_trabalho
             comboBox_Paises.SelectedItem = null;
         }
 
-        #region arquivo
         public void Salvar_arquivo()
         {
             try
@@ -43,18 +50,11 @@ namespace Olimpiadas_trabalho
                 MessageBox.Show(pl.Message);
             }
         }
-        #endregion
 
-        //gera o evento "sair"
+        // evento associado ao botão sair
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-
-        private void textnome_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }
-

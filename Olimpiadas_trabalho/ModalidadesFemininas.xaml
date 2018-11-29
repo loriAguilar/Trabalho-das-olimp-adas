@@ -16,8 +16,8 @@
         <CheckBox x:Name="skeet" Content="Skeet Data: 29/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Height="18" Width="226"/>
         <CheckBox x:Name="fossa" Content="Fossa olímpica Data: 30/07/2020 Local: Tóquio" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Height="18" Width="276" RenderTransformOrigin="0.526,0.412"/>
         <TextBlock HorizontalAlignment="Left" Margin="26,75,0,0" TextWrapping="Wrap" Text="*Selecione apenas as modalidades que deseja participar" VerticalAlignment="Top" Height="15"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="26,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="buttonCadastrarCompeticao"/>
-        <Button Content="Sair" HorizontalAlignment="Left" Margin="211,329,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="Button_Click_1"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="26,329,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="buttonCadastrarCompeticao"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="211,329,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="Button_Click_1"/>
         <Label x:Name="labelNomeAtleta" Content="Atleta: " HorizontalAlignment="Left" Margin="48,44,0,0" VerticalAlignment="Top"/>
 
     </Grid>

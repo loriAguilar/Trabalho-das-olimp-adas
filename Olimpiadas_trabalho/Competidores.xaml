@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="Competidores" Height="307.979" Width="338.83">
+        Title="Competidores" Height="307.979" Width="346.83">
     <Grid>
-        <Button Content="Cadastrar dados dos atletas da competição feminina" HorizontalAlignment="Left" Margin="12,64,0,0" VerticalAlignment="Top" Width="287" Height="34" Click="Button_Click"/>
-        <Button Content="Cadastrar dados dos atletas da competição masculina" HorizontalAlignment="Left" Margin="12,118,0,0" VerticalAlignment="Top" Width="287" Height="34" Click="Button_Click_1"/>
-        <Button Content="Sair" HorizontalAlignment="Left" Margin="116,218,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_2" Height="30"/>
-        <Label Content="Área dos competidores" HorizontalAlignment="Left" Margin="90,17,0,0" VerticalAlignment="Top"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="90,17,0,0" VerticalAlignment="Top" Width="133"/>
-        <Button Content="Inscrever atleta nas modalidades" HorizontalAlignment="Left" Margin="12,168,0,0" VerticalAlignment="Top" Width="287" Height="32" Click="Button_Click_3"/>
+        <Button Content="Cadastrar dados dos atletas da competição feminina" HorizontalAlignment="Left" Margin="21,64,0,0" VerticalAlignment="Top" Width="297" Height="34" Click="Button_Click"/>
+        <Button Content="Cadastrar dados dos atletas da competição masculina" HorizontalAlignment="Left" Margin="21,116,0,0" VerticalAlignment="Top" Width="297" Height="34" Click="Button_Click_1"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="129,238,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_2" Height="30"/>
+        <Label Content="Área dos competidores" HorizontalAlignment="Left" Margin="101,17,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="100,17,0,0" VerticalAlignment="Top" Width="134"/>
+        <Button Content="Inscrever atleta nas modalidades" HorizontalAlignment="Left" Margin="21,168,0,0" VerticalAlignment="Top" Width="297" Height="32" Click="Button_Click_3"/>
 
     </Grid>
 </Window>

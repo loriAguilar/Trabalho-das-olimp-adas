@@ -88,6 +88,7 @@ namespace Olimpiadas_trabalho
 
             MessageBox.Show("Cadastro concluído com sucesso");
             SalvaarquivoM();
+            Close();
         }
 
         //evento sair
