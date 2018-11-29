@@ -27,43 +27,17 @@ namespace Olimpiadas_trabalho
         //inscrever atleta para competição feminina //só os dados do atleta
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Controle.aux++;
             Dados_dos_atletas dados = new Dados_dos_atletas();
             dados.ShowDialog();
-            string nome, pais, comite;
-            char sexo = 'F';
-            nome = dados.textnome.Text;
-            pais = dados.comboBox_Paises.Text;
-            comite = dados.comboBox_Comite.Text;
-            Atleta x;
-            x = new Atleta(nome, pais, comite, sexo);
-            Controle.atletas.Add(x);
-            Controle.indiceAtleta++;
-            dados.Salvar_arquivo();
-            dados.textnome.Clear();
-            dados.comboBox_Comite.SelectedItem = null;
-            dados.comboBox_Paises.SelectedItem = null;
+            //Controle.Cadastrar_Atleta_na_Olimpiada('F');
         }
 
         //inscrever atleta para competição masculina //só os dados do atleta
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Controle.aux++;
             Dados_dos_atletas dados = new Dados_dos_atletas();
             dados.ShowDialog();
-            string nome, pais, comite;
-            char sexo = 'M';
-            nome = dados.textnome.Text;
-            pais = dados.comboBox_Paises.Text;
-            comite = dados.comboBox_Comite.Text;
-            Atleta x;
-            x = new Atleta(nome, pais, comite, sexo);
-            Controle.atletas.Add(x);
-            Controle.indiceAtleta++;
-            dados.Salvar_arquivo();
-            dados.textnome.Clear();
-            dados.comboBox_Comite.SelectedItem = null;
-            dados.comboBox_Paises.SelectedItem = null;
+            //Controle.Cadastrar_Atleta_na_Olimpiada('M');
         }
 
         //botão responsável por desencadear o evento "sair"

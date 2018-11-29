@@ -72,6 +72,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Dados_das_atletas_Femininas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dados_dos_atletas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -118,6 +122,9 @@
       <DependentUpon>Competidores.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controle.cs" />
+    <Compile Include="Dados_das_atletas_Femininas.xaml.cs">
+      <DependentUpon>Dados_das_atletas_Femininas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dados_dos_atletas.xaml.cs">
       <DependentUpon>Dados_dos_atletas.xaml</DependentUpon>
     </Compile>

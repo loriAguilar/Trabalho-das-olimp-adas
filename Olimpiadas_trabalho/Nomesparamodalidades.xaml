@@ -4,8 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
-        mc:Ignorable="d"
-        Title="Nomesparamodalidades" Height="269.681" Width="383.511" ResizeMode="CanMinimize">
+        mc:Ignorable="d" Height="269.681" Width="383.511" ResizeMode="CanMinimize" Title="Inscrição em Competições">
     <Grid>
         <ComboBox x:Name="combonomes" HorizontalAlignment="Left" Margin="133,67,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
         <Button Content="Selecionar" HorizontalAlignment="Left" Margin="101,119,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
