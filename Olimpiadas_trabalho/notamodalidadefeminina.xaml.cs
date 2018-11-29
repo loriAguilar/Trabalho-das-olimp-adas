@@ -45,6 +45,8 @@ namespace Olimpiadas_trabalho
             {
                 MessageBox.Show(e.Message);
             }
+
+            
         }
 
         #region cadastrar nota
@@ -73,7 +75,9 @@ namespace Olimpiadas_trabalho
         #region sair
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
             this.Close();
+            Controle.OrdenarVetorFem();
         }
         #endregion
     }

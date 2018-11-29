@@ -46,19 +46,19 @@ namespace Olimpiadas_trabalho
 
             if (pistolarapida25m.IsChecked == true)
             {
-                ajd = new Competicao("pistolarapida25m", Controle.indiceAtleta);
+                ajd = new Competicao("pistola", Controle.indiceAtleta); //25 metros
                 Controle.competicoes.Add(ajd);
             }
 
             if (pistola.IsChecked == true)
             {
-                ajd = new Competicao("pistola", Controle.indiceAtleta);
+                ajd = new Competicao("pistola50m", Controle.indiceAtleta);
                 Controle.competicoes.Add(ajd);
             }
 
             if (carabina.IsChecked == true)
             {
-                ajd = new Competicao("carabina", Controle.indiceAtleta);
+                ajd = new Competicao("carabinadeitado", Controle.indiceAtleta);
                 Controle.competicoes.Add(ajd);
             }
 
@@ -76,7 +76,7 @@ namespace Olimpiadas_trabalho
 
             if (fossaolimpica.IsChecked == true)
             {
-                ajd = new Competicao("fossaolimpica", Controle.indiceAtleta);
+                ajd = new Competicao("fossa", Controle.indiceAtleta);
                 Controle.competicoes.Add(ajd);
             }
 

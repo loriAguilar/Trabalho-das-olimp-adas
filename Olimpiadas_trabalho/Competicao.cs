@@ -46,6 +46,7 @@ namespace Olimpiadas_trabalho
                 passou[pos] = false;
             for (int pos = 0; pos < notas.Length; pos++)
                 notas[pos] = Controle.notaMinima;
+           
         }
         #endregion
 
