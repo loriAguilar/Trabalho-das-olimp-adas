@@ -21,6 +21,8 @@ namespace Olimpiadas_trabalho
 
             MessageBox.Show(".:Cadastro concluído com sucesso:. \nNome: " + textnome.Text + " \nPaís: " + comboBox_Paises.Text + " \nComitê: " + comboBox_Comite.Text);
             Salvar_arquivo();
+            
+
         }
 
         #region arquivo

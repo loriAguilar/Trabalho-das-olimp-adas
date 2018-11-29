@@ -40,7 +40,9 @@ namespace Olimpiadas_trabalho
             Controle.atletas.Add(x);
             Controle.indiceAtleta++;
             dados.Salvar_arquivo();
-            
+            dados.textnome.Clear();
+            dados.comboBox_Comite.SelectedItem = null;
+            dados.comboBox_Paises.SelectedItem = null;
         }
 
         //inscrever atleta para competição masculina //só os dados do atleta
@@ -59,13 +61,14 @@ namespace Olimpiadas_trabalho
             Controle.atletas.Add(x);
             Controle.indiceAtleta++;
             dados.Salvar_arquivo();
-           
+            dados.textnome.Clear();
+            dados.comboBox_Comite.SelectedItem = null;
+            dados.comboBox_Paises.SelectedItem = null;
         }
 
         //botão responsável por desencadear o evento "sair"
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
             this.Close();
         }
 
