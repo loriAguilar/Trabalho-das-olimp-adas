@@ -35,6 +35,7 @@ namespace Olimpiadas_trabalho
             if (pistoladear.IsChecked == true)
             {
                 ajd = new Competicao("pistoladear", Controle.indiceAtleta);
+                Controle.pistoladear++;
                 Controle.competicoes.Add(ajd);
             }
 

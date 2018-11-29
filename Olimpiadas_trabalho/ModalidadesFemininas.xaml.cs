@@ -36,6 +36,7 @@ namespace Olimpiadas_trabalho
             if (pistoladear.IsChecked == true)
             {
                 aux = new Competicao("pistoladear", Controle.indiceAtleta);
+                Controle.pistoladear++;
                 Controle.competicoes.Add(aux);
             }
             

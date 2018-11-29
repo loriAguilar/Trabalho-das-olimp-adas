@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO; 
+using System.IO;
 
 namespace Olimpiadas_trabalho
 {
@@ -16,7 +16,7 @@ namespace Olimpiadas_trabalho
         public static int aux;
         public static int comfem = 6;
 
-
+        public static int pistoladear = 0;
 
         public static string nomedamodalidade;
         public const int tam = 10;
@@ -39,7 +39,7 @@ namespace Olimpiadas_trabalho
         #endregion
 
         //utilizados nas partes de competição feminina
-        
+
         public static void Cadastrar_Atleta_na_Olimpiada(char sexo, string nome, string pais, string comite)
         {
             aux++;
@@ -75,31 +75,33 @@ namespace Olimpiadas_trabalho
         public static void OrdenarVetorFem()
         {
             int aux1 = 0, aux2 = 0, aux3 = 0, aux4 = 0, aux5 = 0, aux6 = 0, aux7 = 0, aux8 = 0, aux9 = 0;
-            
+            int[] vet1 = new int[aux1];
+            double[] vet2 = new double[aux1];
+            for (int h = 0; h < aux1; h++)
+            {
+                vet1[h] = competicoes[h].IdAtleta;
+                vet2[h] = competicoes[h].Notas[0];
+            }
+
             try
             {
-
-                System.Windows.MessageBox.Show(Convert.ToString(competicoes.Count));
+                
                 for (int a = 0; a < competicoes.Count; a++)
                 {
                     
-
                     if (competicoes[a].NomeCompeticao == "pistoladear") //pistoladear -feminino e masculino
                     {
-                        aux1++;
-                        int[] vet1 = new int[aux1];
+                        aux1 = Controle.pistoladear;
                         int menorpos, aux;
-                        for(int h=0;h<aux1;h++)
-                        {
-                            vet1[h] = competicoes[h].IdAtleta;
-                        }
+                        
 
-                        for(int posicao=0;posicao<aux1;posicao++)
+
+                        for (int posicao = 0; posicao < aux1; posicao++)
                         {
                             menorpos = posicao;
-                            for(int po=posicao+1;po<aux1;po++)
+                            for (int po = posicao + 1; po < aux1; po++)
                             {
-                                if(competicoes[menorpos].Notas[0]>competicoes[po].Notas[0])
+                                if (vet2[menorpos] > vet2[po])
                                 {
                                     menorpos = po;
                                 }
@@ -107,16 +109,13 @@ namespace Olimpiadas_trabalho
 
                             aux = vet1[posicao];
                             vet1[posicao] = competicoes[menorpos].IdAtleta;
-                            
+                            vet2[menorpos] = aux;
+
                         }
 
-
-                        string ven = "Vencedor: " + Convert.ToString(vet1[0]);
-                        System.Windows.MessageBox.Show(ven);
-
-
                     }
-                    else if (competicoes[a].NomeCompeticao == "carabinadear") //carabinadear-feminino e masculino
+                    
+                    /*else if (competicoes[a].NomeCompeticao == "carabinadear") //carabinadear-feminino e masculino
                     {
                         aux2++;
                         int[] vet2 = new int[aux2];
@@ -162,16 +161,19 @@ namespace Olimpiadas_trabalho
                         int[] vet9 = new int[aux9];
                     }
 
+                }*/
                 }
+                string ven = "Vencedor: " + Convert.ToString(vet1[0]);
+                System.Windows.MessageBox.Show(ven);
 
             }
             catch (Exception ç)
             {
                 System.Windows.MessageBox.Show(ç.Message);
             }
-    
+
         }
-     }
+    }
 
 
 }
