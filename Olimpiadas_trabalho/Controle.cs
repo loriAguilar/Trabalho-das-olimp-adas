@@ -83,23 +83,23 @@ namespace Olimpiadas_trabalho
                 vet2[h] = competicoes[h].Notas[0];
             }
 
+
             try
             {
-                
                 for (int a = 0; a < competicoes.Count; a++)
                 {
-                    
+
                     if (competicoes[a].NomeCompeticao == "pistoladear") //pistoladear -feminino e masculino
                     {
                         aux1 = Controle.pistoladear;
                         int menorpos, aux;
-                        
+
 
 
                         for (int posicao = 0; posicao < aux1; posicao++)
                         {
                             menorpos = posicao;
-                            for (int po = posicao + 1; po < aux1; po++)
+                            for (int po = 0; po < aux1; po++)
                             {
                                 if (vet2[menorpos] > vet2[po])
                                 {
@@ -114,7 +114,7 @@ namespace Olimpiadas_trabalho
                         }
 
                     }
-                    
+
                     /*else if (competicoes[a].NomeCompeticao == "carabinadear") //carabinadear-feminino e masculino
                     {
                         aux2++;
@@ -166,12 +166,12 @@ namespace Olimpiadas_trabalho
                 string ven = "Vencedor: " + Convert.ToString(vet1[0]);
                 System.Windows.MessageBox.Show(ven);
 
-            }
-            catch (Exception ç)
-            {
-                System.Windows.MessageBox.Show(ç.Message);
-            }
 
+            }
+            catch(Exception erro)
+            {
+                System.Windows.MessageBox.Show(erro.Message);
+            }
         }
     }
 
