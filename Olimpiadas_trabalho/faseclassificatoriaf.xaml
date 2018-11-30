@@ -16,7 +16,7 @@
         <Button Content="Fossa olímpica" HorizontalAlignment="Left" Margin="92,295,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_5"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="111,24,0,0" VerticalAlignment="Top" Width="109"/>
         <Button Content="Sair" HorizontalAlignment="Left" Margin="128,374,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_6"/>
-        <Button Content="Avançar para próxima fase" HorizontalAlignment="Left" Margin="92,338,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click_2"/>
+        <Button Content="Avançar para próxima fase" HorizontalAlignment="Left" Margin="92,338,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click_7"/>
 
     </Grid>
 </Window>

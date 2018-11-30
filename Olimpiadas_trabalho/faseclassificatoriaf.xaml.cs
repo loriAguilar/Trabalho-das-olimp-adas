@@ -86,5 +86,10 @@ namespace Olimpiadas_trabalho
             this.Close();
         }
         #endregion
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            Arquivos.escreverRelatorioResultado(0);
+        }
     }
 }
