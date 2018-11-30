@@ -149,9 +149,9 @@ namespace Olimpiadas_trabalho
 
 
                 //string vencedor = "Vencedor: " + competicoes[posMaiorNota].IdAtleta;
-                //int n = competicoes[ax].IdAtleta;
-                //string ganhador = "Vencedor: " + atletas[n].Nome;
-                //System.Windows.MessageBox.Show(ganhador);
+                int n = competicoes[0].IdAtleta;
+                string ganhador = "Vencedor: " + atletas[n].Nome;
+                System.Windows.MessageBox.Show(ganhador);
 
             }
            
