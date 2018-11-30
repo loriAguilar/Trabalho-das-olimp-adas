@@ -74,83 +74,86 @@ namespace Olimpiadas_trabalho
 
         public static void OrdenarVetor(int fase)
         {
-            #region gustavo
+            #region teste
             
                 int quantidadeCompeticoes = 1;
                 string modalidadeSeraOrdenada;
 
-                for (int comp = 0; comp < quantidadeCompeticoes; comp++)
+            for (int comp = 0; comp < quantidadeCompeticoes; comp++)
+            {
+                if (comp == 0)
+                    modalidadeSeraOrdenada = "pistoladear";
+                else if (comp == 1)
+                    modalidadeSeraOrdenada = "carabinadear";
+                else if (comp == 2)
+                    modalidadeSeraOrdenada = "pistola";
+                else if (comp == 3)
+                    modalidadeSeraOrdenada = "carabinatrespos";
+                else if (comp == 4)
+                    modalidadeSeraOrdenada = "skeet";
+                else if (comp == 5)
+                    modalidadeSeraOrdenada = "fossa";
+                else if (comp == 6)
+                    modalidadeSeraOrdenada = "pistola50m";
+                else if (comp == 7)
+                    modalidadeSeraOrdenada = "carabinadeitado";
+                else  
+                    modalidadeSeraOrdenada = "fossaolimpicadupla";
+
+
+
+                int tamanhoVetorFiltrado = 0, posLista = 0, posVetor;
+
+                //descobrindo o tamanho do vetor
+                foreach (var item in competicoes)
                 {
-                    if (comp == 0)
-                        modalidadeSeraOrdenada = "pistoladear";
-                    else if (comp == 1)
-                        modalidadeSeraOrdenada = "carabinadear";
-                    else if (comp == 2)
-                        modalidadeSeraOrdenada = "pistola";
-                    else if (comp == 3)
-                        modalidadeSeraOrdenada = "carabinatrespos";
-                    else if (comp == 4)
-                        modalidadeSeraOrdenada = "skeet";
-                    else if (comp == 5)
-                        modalidadeSeraOrdenada = "fossa";
-                    else if (comp == 6)
-                        modalidadeSeraOrdenada = "pistola50m";
-                    else if (comp == 7)
-                        modalidadeSeraOrdenada = "carabinadeitado";
-                    else if (comp == 8)
-                        modalidadeSeraOrdenada = "fossaolimpicadupla";
+                    if (competicoes[posLista].NomeCompeticao == modalidadeSeraOrdenada)
+                        tamanhoVetorFiltrado++;
 
+                    posLista++;
+                }
 
-                    modalidadeSeraOrdenada = null;
+                int[] vetorIndices = new int[tamanhoVetorFiltrado];
 
-                    int tamanhoVetorFiltrado = 0, posLista = 0, posVetor;
-
-                    //descobrindo o tamanho do vetor
-                    foreach (var item in competicoes)
+                //atribuindo valores ao vetorIndices
+                posLista = 0; posVetor = 0;
+                foreach (var item in competicoes)
+                {
+                    if (competicoes[posLista].NomeCompeticao == modalidadeSeraOrdenada)
                     {
-                        if (competicoes[posLista].NomeCompeticao == modalidadeSeraOrdenada)
-                            tamanhoVetorFiltrado++;
-
+                        vetorIndices[posVetor] = posLista;
+                        posVetor++;
                         posLista++;
                     }
-
-                    int[] vetorIndices = new int[tamanhoVetorFiltrado];
-
-                    //atribuindo valores ao vetorIndices
-                    posLista = 0; posVetor = 0;
-                    foreach (var item in competicoes)
-                    {
-                        if (competicoes[posLista].NomeCompeticao == modalidadeSeraOrdenada)
-                        {
-                            vetorIndices[posVetor] = posLista;
-                            posVetor++;
-                        }
-                        posLista++;
-                    }
-
-                    //ordenando a partir do vetorIndices
-                    int posMaiorNota = vetorIndices[0];
-                    Competicao auxiliar;
-                    for (posVetor = 1; posVetor < vetorIndices.Length; posVetor++)
-                    {
-                        for (int i = posVetor + 1; i < vetorIndices.Length; i++)
-                            if (competicoes[posMaiorNota].Notas[fase] < competicoes[posVetor].Notas[fase])
-                                posMaiorNota = posVetor;
-
-                        auxiliar = competicoes[posVetor];
-                        competicoes[posVetor] = competicoes[posMaiorNota];
-                        competicoes[posMaiorNota] = auxiliar;
-                    }
-
-
-
-
-                    //string vencedor = "Vencedor: " + competicoes[posMaiorNota].IdAtleta;
-                    int n = competicoes[posMaiorNota].IdAtleta;
-                    string ganhador = "Vencedor: " + atletas[n].Nome;
-                    System.Windows.MessageBox.Show(ganhador);
 
                 }
+
+                //ordenando a partir do vetorIndices
+                int posMaiorNota; //= vetorIndices[0];
+                Competicao auxiliar;
+                for (posVetor = 1; posVetor < vetorIndices.Length; posVetor++)
+                {
+                    posMaiorNota = vetorIndices[0];
+
+                    for (int i = posVetor + 1; i < vetorIndices.Length; i++)
+                        if (competicoes[posMaiorNota].Notas[fase] < competicoes[posVetor].Notas[fase])
+                            posMaiorNota = posVetor;
+
+                    auxiliar = competicoes[posVetor];
+                    competicoes[posVetor] = competicoes[posMaiorNota];
+                    competicoes[posMaiorNota] = auxiliar;
+                    
+                }
+                
+
+
+
+                //string vencedor = "Vencedor: " + competicoes[posMaiorNota].IdAtleta;
+                //int n = competicoes[ax].IdAtleta;
+                //string ganhador = "Vencedor: " + atletas[n].Nome;
+                //System.Windows.MessageBox.Show(ganhador);
+
+            }
            
                 #endregion
             
