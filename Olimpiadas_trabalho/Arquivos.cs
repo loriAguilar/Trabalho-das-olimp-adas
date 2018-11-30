@@ -16,8 +16,7 @@ namespace Olimpiadas_trabalho
         /// </summary>
         /// <param name="atleta"></param>
         public static void Salvar(List<Atleta> atleta)
-        {
-            Carregar(atleta);
+        {            
             StreamWriter salvos = new StreamWriter("Atletas.txt"); //Caso o arquivo já exista adiciona-se mais linhas
 
             foreach (var item in atleta)
@@ -51,7 +50,7 @@ namespace Olimpiadas_trabalho
                     Atleta item = new Atleta(linha[0], linha[1], linha[2], char.Parse(linha[3])); //Cria um atleta com as informações da linha
 
                     if (!Cadastrado(atleta, item)) //Caso o atleta não esteja cadastrado adiciona-se à lista de atletas
-                        atleta.Add(item);
+                        Controle.Cadastrar_Atleta_na_Olimpiada(item.Sexo, item.Nome, item.Pais, item.Comite);
                 }
                 load.Close();
             }
