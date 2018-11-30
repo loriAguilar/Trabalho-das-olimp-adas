@@ -146,58 +146,7 @@ namespace Olimpiadas_trabalho
                         auxiliar = competicoes[posVetor];
                         competicoes[posVetor] = competicoes[posMaiorNota];
                         competicoes[posMaiorNota] = auxiliar;
-
                     }
-
-                    //string vencedor = "Vencedor: " + competicoes[posMaiorNota].IdAtleta;
-                    if (modalidadeSeraOrdenada == "pistoladear")
-                    {
-                        //int[] aux = new int[vetorIndices.Length];
-                        //for(int i=0;i<vetorIndices.Length;i++)
-                        //{
-                        //    if(modalidadeSeraOrdenada=="pistoladear")
-                        //    {
-                        //        aux[i] = vetorIndices[i];
-                        //    }
-                        //}
-
-                        //string ganhador = "Vencedor desta fase: " + aux[0];
-
-
-                        string ganhador = "Vencedor desta fase: " + atletas[competicoes[vetorIndices[0]].IdAtleta].Nome;
-                        competicoes[vetorIndices[0]].Passou[0] = true;
-                        competicoes[vetorIndices[1]].Passou[0] = true;
-                        System.Windows.MessageBox.Show(ganhador, "testeA");
-
-
-                        //int g1 = competicoes[vetorIndices[0]].IdAtleta;
-                        //int g2 = competicoes[vetorIndices[1]].IdAtleta;
-
-                        //string ganhador = "Vencedor desta fase: " + atletas[g1].Nome;
-                        //competicoes[g1].Passou[0] = true;
-                        //competicoes[g2].Passou[0] = true;
-                        //System.Windows.MessageBox.Show(ganhador);
-                    }
-
-                    if (modalidadeSeraOrdenada == "carabinadear")
-                    {
-                        int g1 = competicoes[vetorIndices[0]].IdAtleta;
-                        int g2 = competicoes[vetorIndices[1]].IdAtleta;
-
-                        string ganhador = "Vencedor desta fase: " + atletas[g1].Nome;
-                        competicoes[g1].Passou[0] = true;
-                        competicoes[g2].Passou[0] = true;
-                        System.Windows.MessageBox.Show(ganhador,"testeB");
-                    }
-
-                    else
-                    {
-                        System.Windows.MessageBox.Show("Não implementado");
-                    }
-
-
-
-
                 }
 
             }
@@ -207,19 +156,6 @@ namespace Olimpiadas_trabalho
             }
 
             #endregion
-            
-
-
-
-
-
-            
-                         
-                            
-        
-                   
-
-                   
         }
     }
 

@@ -151,5 +151,52 @@ namespace Olimpiadas_trabalho
             return (Existe);
         }
         #endregion
+
+        #region Gerar relatorio Vencedores
+        public static void escreverRelatorioResultado(int fase)
+        {
+            StreamWriter arquivo = new StreamWriter("resultadoFaseEliminatoria.txt");
+            int quantidadeCompeticoes = 8;
+            string modalidadeSeraOrdenada;
+
+            for (int comp = 0; comp < quantidadeCompeticoes; comp++)
+            {
+                if (comp == 0)
+                    modalidadeSeraOrdenada = "pistoladear";
+                else if (comp == 1)
+                    modalidadeSeraOrdenada = "carabinadear";
+                else if (comp == 2)
+                    modalidadeSeraOrdenada = "pistola";
+                else if (comp == 3)
+                    modalidadeSeraOrdenada = "carabinatrespos";
+                else if (comp == 4)
+                    modalidadeSeraOrdenada = "skeet";
+                else if (comp == 5)
+                    modalidadeSeraOrdenada = "fossa";
+                else if (comp == 6)
+                    modalidadeSeraOrdenada = "pistola50m";
+                else if (comp == 7)
+                    modalidadeSeraOrdenada = "carabinadeitado";
+                else
+                    modalidadeSeraOrdenada = "fossaolimpicadupla";
+
+                int pos = 0;
+                foreach (var item in Controle.competicoes)
+                {
+                    arquivo.WriteLine("modadelida: {0}", modalidadeSeraOrdenada);
+                    if (Controle.competicoes[pos].NomeCompeticao == modalidadeSeraOrdenada)
+                        arquivo.WriteLine("Posição {0}: Nome Atleta:{1} Nota: {2}", pos + 1, Controle.atletas[Controle.competicoes[pos].IdAtleta].Nome, Controle.competicoes[pos].Notas[fase]);
+                    pos++;
+                }
+                arquivo.WriteLine();
+                arquivo.WriteLine();
+                arquivo.WriteLine();
+                arquivo.WriteLine();
+            }
+
+            arquivo.Close();
+        }
+        #endregion
+
     }
 }
