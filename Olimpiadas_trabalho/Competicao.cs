@@ -52,7 +52,7 @@ namespace Olimpiadas_trabalho
 
         public void cadastrarNota(int fase, double nota)
         {
-            notas[fase - 1] = nota;
+            notas[fase-1] = nota;
         }
     }
 }
