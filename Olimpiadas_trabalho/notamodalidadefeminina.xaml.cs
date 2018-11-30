@@ -84,7 +84,7 @@ namespace Olimpiadas_trabalho
         #region avançar
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Controle.OrdenarVetorFem();
+            Controle.OrdenarVetor(fase);
         }
         #endregion
     }

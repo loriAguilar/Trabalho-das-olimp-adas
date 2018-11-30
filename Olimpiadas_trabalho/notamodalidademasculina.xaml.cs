@@ -74,5 +74,12 @@ namespace Olimpiadas_trabalho
             this.Close();
         }
         #endregion
+
+        #region passar para próxima fase
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
