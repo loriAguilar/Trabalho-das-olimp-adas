@@ -74,7 +74,7 @@ namespace Olimpiadas_trabalho
 
         public static void OrdenarVetor(int fase)
         {
-            #region teste
+            #region ordenando certo
             
                 int quantidadeCompeticoes = 1;
                 string modalidadeSeraOrdenada;
@@ -149,15 +149,19 @@ namespace Olimpiadas_trabalho
 
 
                 //string vencedor = "Vencedor: " + competicoes[posMaiorNota].IdAtleta;
-                int n = competicoes[0].IdAtleta;
-                string ganhador = "Vencedor: " + atletas[n].Nome;
+                int g1 = competicoes[0].IdAtleta;
+                int g2 = competicoes[1].IdAtleta;
+                string ganhador = "Vencedor desta fase: " + atletas[g1].Nome;
+                competicoes[g1].Passou[0] = true;
+                competicoes[g2].Passou[0] = true;
                 System.Windows.MessageBox.Show(ganhador);
+
+                
 
             }
            
                 #endregion
             
-
 
 
 
