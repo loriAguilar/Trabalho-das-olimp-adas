@@ -11,11 +11,10 @@
         <Label Content="Nota: " HorizontalAlignment="Left" Margin="41,92,0,0" VerticalAlignment="Top"/>
         <Label Content="Nome:" HorizontalAlignment="Left" Margin="41,55,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="notatexto" HorizontalAlignment="Left" Height="23" Margin="112,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Cadastrar nota" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click"/>
-        <Button Content="Sair" HorizontalAlignment="Left" Margin="93,174,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Cadastrar nota" HorizontalAlignment="Left" Margin="29,159,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="172,159,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <Label Content="Modalidade:" HorizontalAlignment="Left" Margin="29,24,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labelNomeModalidade" Content="Label" HorizontalAlignment="Left" Margin="110,24,0,0" VerticalAlignment="Top"/>
-        <Button Content="Avançar para próxima fase" HorizontalAlignment="Left" Margin="132,139,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

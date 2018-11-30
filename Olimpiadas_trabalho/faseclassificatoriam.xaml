@@ -5,23 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Olimpiadas_trabalho"
         mc:Ignorable="d"
-        Title="faseclassificatoriam" Height="525" Width="319.681">
+        Title="faseclassificatoriam" Height="563" Width="319.681">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Content="Modalidades" HorizontalAlignment="Left" Margin="125,24,0,0" VerticalAlignment="Top"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="111,24,0,0" VerticalAlignment="Top" Width="109"/>
-        <Button Content="Pistola de ar 10m " HorizontalAlignment="Left" Margin="92,69,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
-        <Button Content="Carabina de ar 10m" HorizontalAlignment="Left" Margin="92,117,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_1"/>
-        <Button Content="Pistola rápida 10m" HorizontalAlignment="Left" Margin="92,161,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_2"/>
-        <Button Content="Pistola 50m" HorizontalAlignment="Left" Margin="92,204,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_3"/>
-        <Button Content="Carabina deitado 50m" HorizontalAlignment="Left" Margin="92,249,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_4"/>
-        <Button Content="Carabina três posições 50m" HorizontalAlignment="Left" Margin="92,292,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_5"/>
-        <Button Content="Skeet" HorizontalAlignment="Left" Margin="92,332,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_6"/>
-        <Button Content="Fossa olímpica" HorizontalAlignment="Left" Margin="92,374,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_7"/>
-        <Button Content="Sair" HorizontalAlignment="Left" Margin="94,452,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_9"/>
-        <Button Content="Fossa olímpica dupla" HorizontalAlignment="Left" Margin="94,413,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_8"/>
+        <Button Content="Pistola de ar 10m " HorizontalAlignment="Left" Margin="89,69,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
+        <Button Content="Carabina de ar 10m" HorizontalAlignment="Left" Margin="89,117,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_1"/>
+        <Button Content="Pistola rápida 10m" HorizontalAlignment="Left" Margin="89,161,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_2"/>
+        <Button Content="Pistola 50m" HorizontalAlignment="Left" Margin="89,203,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_3"/>
+        <Button Content="Carabina deitado 50m" HorizontalAlignment="Left" Margin="91,249,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_4"/>
+        <Button Content="Carabina três posições 50m" HorizontalAlignment="Left" Margin="91,291,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_5"/>
+        <Button Content="Skeet" HorizontalAlignment="Left" Margin="91,332,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_6"/>
+        <Button Content="Fossa olímpica" HorizontalAlignment="Left" Margin="91,374,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_7"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="91,493,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_9"/>
+        <Button Content="Fossa olímpica dupla" HorizontalAlignment="Left" Margin="91,414,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click_8"/>
+        <Button Content="Avançar para próxima fase" HorizontalAlignment="Left" Margin="91,453,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click_2"/>
 
     </Grid>
 </Window>
