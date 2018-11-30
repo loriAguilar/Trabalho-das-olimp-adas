@@ -131,12 +131,10 @@ namespace Olimpiadas_trabalho
                     }
 
                     //ordenando a partir do vetorIndices
-                    int posMaiorNota; //= vetorIndices[0];
+                    int posMaiorNota = vetorIndices[0]; //= vetorIndices[0];
                     Competicao auxiliar;
                     for (posVetor = 0; posVetor < vetorIndices.Length; posVetor++)
-                    {
-                        posMaiorNota = vetorIndices[0];
-
+                    {                        
                         for (int i = posVetor + 1; i < vetorIndices.Length; i++)
                             if (competicoes[posMaiorNota].Notas[fase] > competicoes[posVetor].Notas[fase])
                                 posMaiorNota = posVetor;
