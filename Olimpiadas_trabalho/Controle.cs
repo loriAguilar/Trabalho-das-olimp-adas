@@ -174,7 +174,6 @@ namespace Olimpiadas_trabalho
 
                         //int g1 = competicoes[vetorIndices[0]].IdAtleta;
                         //int g2 = competicoes[vetorIndices[1]].IdAtleta;
-
                         //string ganhador = "Vencedor desta fase: " + atletas[g1].Nome;
                         //competicoes[g1].Passou[0] = true;
                         //competicoes[g2].Passou[0] = true;
